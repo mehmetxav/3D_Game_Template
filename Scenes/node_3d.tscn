@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://bgdry3b62pjb5"]
+[gd_scene load_steps=43 format=3 uid="uid://bgdry3b62pjb5"]
 
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="1_3mk2u"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_kl8ha"]
@@ -140,9 +140,19 @@ data = PackedVector3Array(0.5685, 0.4409, -11.4982, 0.5682, 0.4409, -11.4941, 0.
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_xupjx"]
-size = Vector3(0.2, 0.5, 0.5)
+size = Vector3(0.2, 0.9, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk1ib"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.333333, 0.34902, 0.329412, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_evbk1"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.333333, 0.34902, 0.329412, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xfj2"]
 diffuse_mode = 3
 specular_mode = 1
 albedo_color = Color(0.333333, 0.34902, 0.329412, 1)
@@ -151,7 +161,7 @@ albedo_color = Color(0.333333, 0.34902, 0.329412, 1)
 size = Vector3(0.5, 0.9, 0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjeg0"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.533333, 0.533333, 0.533333, 1)
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0267181, -1.90735e-06, -0.0250435)
@@ -349,7 +359,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.307, -0.0455145, 0.743983
 [node name="Node3D" type="Node3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(16.721, 0, 0, 0, 0.99887, 0, 0, 0, 40.5351, -23.2407, 0, 0)
+transform = Transform3D(16.721, 0, 0, 0, 0.99887, 0, 0, 0, 40.5351, -23.3368, 0, 0)
 mesh = SubResource("BoxMesh_atepc")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Node3D/MeshInstance3D"]
@@ -358,33 +368,33 @@ mesh = SubResource("BoxMesh_atepc")
 transform = Transform3D(1.00617, 0, 0, 0, 1.00617, 0, 0, 0, 1.00617, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_wq1hd")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 8.13099, 0, 0, 0, 14.9296, -29.1324, 2.71157, -2.73363)
+[node name="Back Wall" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 8.13099, 0, 0, 0, 14.9296, -30.1822, 3.31051, -6.67513)
+mesh = SubResource("BoxMesh_xupjx")
+surface_material_override/0 = SubResource("StandardMaterial3D_sk1ib")
+
+[node name="Right wall" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.00872653, 0, -14.9291, 0, 8.13098, 0, 0.999962, 0, 0.130284, -26.553, 2.93559, -2.93973)
 mesh = SubResource("BoxMesh_xupjx")
 surface_material_override/0 = SubResource("StandardMaterial3D_evbk1")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(0.00872653, 0, -14.9291, 0, 8.13098, 0, 0.999962, 0, 0.130284, -25.5089, 2.71157, 1.04251)
+[node name="Floor" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.000680624, 8.13098, 0, -1, 0.00553421, 0, 0, 0, 14.9296, -26.5006, 0.517799, -6.69572)
 mesh = SubResource("BoxMesh_xupjx")
-surface_material_override/0 = SubResource("StandardMaterial3D_evbk1")
+surface_material_override/0 = SubResource("StandardMaterial3D_7xfj2")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(0.000680624, 8.13098, 0, -1, 0.00553421, 0, 0, 0, 14.9296, -27.0691, 0.618337, -2.59172)
-mesh = SubResource("BoxMesh_xupjx")
-surface_material_override/0 = SubResource("StandardMaterial3D_evbk1")
-
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(0.000680624, 8.13098, 0, -1, 0.00553421, 0, 0, 0, 14.9296, -25.6937, 4.47803, -2.7468)
+[node name="Roof" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.000680624, 8.13098, 0, -1, 0.00553421, 0, 0, 0, 14.9296, -26.4761, 6.73257, -6.61881)
 mesh = SubResource("BoxMesh_o4ws5")
 surface_material_override/0 = SubResource("StandardMaterial3D_evbk1")
 
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(0.000680624, 8.13098, 0, -1, 0.00553421, 0, 0, 0, 14.9296, -23.8888, 0.631635, -2.61412)
-mesh = SubResource("BoxMesh_xupjx")
-surface_material_override/0 = SubResource("StandardMaterial3D_evbk1")
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/Roof"]
+transform = Transform3D(1, 8.44011e-09, 0, 1.45519e-11, 0.122986, 0, 0, 0, 0.066981, 3.60616, -0.0931575, 0)
+light_color = Color(0.627451, 0.298039, 0.619608, 1)
+light_energy = 16.0
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D"]
-transform = Transform3D(-0.0135788, -0.00316532, -14.9283, 0.000251049, 8.13098, -0.00586339, 0.999908, -0.00208443, -0.202725, -25.5215, 2.71157, -6.34949)
+[node name="left wall" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-0.0135788, -0.00316532, -14.9283, 0.000251049, 8.13098, -0.00586339, 0.999908, -0.00208443, -0.202725, -26.552, 3.31624, -10.3563)
 mesh = SubResource("BoxMesh_xupjx")
 surface_material_override/0 = SubResource("StandardMaterial3D_evbk1")
 
@@ -393,11 +403,11 @@ script = ExtResource("2_kl8ha")
 make = 3
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Node3D/CSGMesh3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.9704, 2.64435, -2.78416)
-size = Vector3(0.222656, 3.88989, 7.23218)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9583, 2.45753, -6.68387)
+size = Vector3(0.223, 8.1, 7.232)
 material = SubResource("StandardMaterial3D_yjeg0")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Node3D/CSGMesh3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.9408, 1.98311, -2.3977)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9348, 1.88341, -6.79385)
 operation = 2
 size = Vector3(0.301316, 2.48118, 1.75793)
