@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://28ebfhtpe3ya"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_g3lje"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jv6aa"]
+albedo_color = Color(0.552941, 0.294118, 0, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_wom6g"]
+
+[node name="Lighting" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.555889, 0.719889, -0.415628, 2.10754e-08, 0.5, 0.866025, 0.831256, 0.481414, -0.277945, 0, 1.00786, 0)
+shadow_enabled = true
+directional_shadow_split_1 = 0.157
+directional_shadow_split_2 = 1.0
+directional_shadow_split_3 = 0.371
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0105705, -0.0237608, 0.0143795)
+mesh = SubResource("BoxMesh_g3lje")
+surface_material_override/0 = SubResource("StandardMaterial3D_jv6aa")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.00704, -1.9421)
+mesh = SubResource("CapsuleMesh_wom6g")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.738903, 1.3483, 0)
+omni_attenuation = 3.55924
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.949546, 0.313628, 0, -0.313628, 0.949546, 2.44733, 1.06199, 1.41822)
+light_energy = 16.0
+spot_range = 5.02664
+spot_angle = 3.17346
