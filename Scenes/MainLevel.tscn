@@ -903,8 +903,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.641, 2.16152, 7.75105)
 mesh = SubResource("CapsuleMesh_cvral")
 surface_material_override/0 = SubResource("StandardMaterial3D_0xmfu")
 
-[node name="Chair_Scene2" parent="." instance=ExtResource("4_76rc5")]
-transform = Transform3D(-0.999767, 0, -0.0215706, 0, 1, 0, 0.0215706, 0, -0.999767, 28.6664, 0.574253, 27.3617)
+[node name="InteriorHouse" type="Node3D" parent="."]
 
-[node name="window" parent="." instance=ExtResource("5_ekamu")]
-transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 32.6547, 3.15828, 24.9844)
+[node name="Chair_Scene2" parent="InteriorHouse" instance=ExtResource("4_76rc5")]
+transform = Transform3D(-0.978628, -0.0856188, -0.18697, -0.0871557, 0.996195, 7.18405e-16, 0.186258, 0.0162955, -0.982366, 28.1129, 0.574253, 28.1675)
+
+[node name="Chair_Scene3" parent="InteriorHouse" instance=ExtResource("4_76rc5")]
+transform = Transform3D(0.978977, 0.0856494, 0.185118, -0.0871557, 0.996195, 1.78014e-09, -0.184413, -0.0161341, 0.982716, 28.1663, 0.574254, 23.6443)
+
+[node name="window" parent="InteriorHouse" instance=ExtResource("5_ekamu")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 32.6591, 3.15828, 24.989)
+
+[node name="window2" parent="InteriorHouse" instance=ExtResource("5_ekamu")]
+transform = Transform3D(1.19249e-08, -3.48787e-16, -1, 3.48787e-16, 1, -3.48787e-16, 1, -3.48787e-16, 1.19249e-08, 22.9449, 3.15608, 24.9891)
