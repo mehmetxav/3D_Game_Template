@@ -1,8 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=28 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="PackedScene" uid="uid://dbu8eryxcpq7b" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
+[ext_resource type="PackedScene" uid="uid://duwgypitxhrnj" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://bk6x3w7cvur7i" path="res://Models/window.glb" id="5_ekamu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -61,7 +63,21 @@ size = Vector3(3.3, 2.4, 0.7)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cvral"]
 
+[sub_resource type="Gradient" id="Gradient_2gccw"]
+offsets = PackedFloat32Array(0, 0.0122951, 0.446721)
+colors = PackedColorArray(0, 0, 0, 1, 0.17623, 0.17623, 0.17623, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_bxcha"]
+frequency = 0.1447
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_h5mjo"]
+seamless = true
+color_ramp = SubResource("Gradient_2gccw")
+noise = SubResource("FastNoiseLite_bxcha")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xmfu"]
+albedo_color = Color(0.219608, 0.639216, 0.435294, 1)
+albedo_texture = SubResource("NoiseTexture2D_h5mjo")
 emission_enabled = true
 
 [node name="MainLevel" type="Node3D"]
@@ -886,3 +902,9 @@ omni_range = 7.09522
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.641, 2.16152, 7.75105)
 mesh = SubResource("CapsuleMesh_cvral")
 surface_material_override/0 = SubResource("StandardMaterial3D_0xmfu")
+
+[node name="Chair_Scene2" parent="." instance=ExtResource("4_76rc5")]
+transform = Transform3D(-0.999767, 0, -0.0215706, 0, 1, 0, 0.0215706, 0, -0.999767, 28.6664, 0.574253, 27.3617)
+
+[node name="window" parent="." instance=ExtResource("5_ekamu")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 32.6547, 3.15828, 24.9844)
