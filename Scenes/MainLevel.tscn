@@ -1,11 +1,12 @@
-[gd_scene load_steps=29 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=30 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="PackedScene" uid="uid://dbu8eryxcpq7b" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://chfmw7xa80oy4" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
-[ext_resource type="PackedScene" uid="uid://duwgypitxhrnj" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://bk6x3w7cvur7i" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://2k2ct41e4vjw" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="PackedScene" uid="uid://ccvvibvceh16y" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://cg2lrkw8ba7gc" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://qtr16kobuecb" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -920,3 +921,12 @@ transform = Transform3D(1.19249e-08, -3.48787e-16, -1, 3.48787e-16, 1, -3.48787e
 
 [node name="Table_Scene" parent="InteriorHouse" instance=ExtResource("6_c6vpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.264, 0.584434, 24.8445)
+
+[node name="Area3D5" parent="." instance=ExtResource("7_rcf5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9962, 1.13543, 2.96392)
+
+[node name="Area3D6" parent="." instance=ExtResource("7_rcf5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9962, 1.13543, -0.380557)
+
+[node name="Area3D7" parent="." instance=ExtResource("7_rcf5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9962, 1.13543, -3.70835)

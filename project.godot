@@ -11,9 +11,12 @@ config_version=5
 [application]
 
 config/name="3D_Game_Template"
-run/main_scene="res://Scenes/node_3d.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://Scripts/global.gd"
 
 [display]
 
@@ -23,7 +26,7 @@ window/size/fullscreen=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/csg_mesher/plugin.cfg")
+enabled=PackedStringArray()
 
 [gui]
 
