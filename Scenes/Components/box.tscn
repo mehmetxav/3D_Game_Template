@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpnhoyddvi6qv"]
+
+[ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="1_sbvc8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mnbro"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eg3x7"]
+
+[node name="Box" type="RigidBody3D"]
+transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 30.6997, 6.23699, 0)
+collision_layer = 8
+collision_mask = 11
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -2.98023e-08, 5.96046e-08, 1, 8.9407e-08, 2.98023e-08, 0, 1, 0, 0, 0)
+material_override = ExtResource("1_sbvc8")
+mesh = SubResource("BoxMesh_mnbro")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_eg3x7")

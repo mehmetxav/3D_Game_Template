@@ -1,16 +1,18 @@
-[gd_scene load_steps=39 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=43 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="PackedScene" uid="uid://chfmw7xa80oy4" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://bqlbs67uqaun7" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
-[ext_resource type="PackedScene" uid="uid://ccvvibvceh16y" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://cg2lrkw8ba7gc" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://qtr16kobuecb" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="PackedScene" uid="uid://b47k7dtswlgrr" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://bhqaiso5fohyg" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://eioh4cwb1ffr" path="res://Models/centre_table.glb" id="6_c6vpx"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://tm63p7ifukn1" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="PackedScene" uid="uid://c3esm80chddth" path="res://Models/floor_carpet.glb" id="8_0hebu"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
-[ext_resource type="PackedScene" uid="uid://b58xh1kia3iqk" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="PackedScene" uid="uid://b5tveqfkf3qus" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
+[ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -101,6 +103,10 @@ size = Vector2(1.5, 0.5)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_w44tq"]
 data = PackedVector3Array(0.75, 0, 0.25, -0.75, 0, 0.25, 0.75, 0, -0.25, -0.75, 0, 0.25, -0.75, 0, -0.25, 0.75, 0, -0.25)
+
+[sub_resource type="SphereMesh" id="SphereMesh_qqm72"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jcxse"]
 
 [node name="MainLevel" type="Node3D"]
 
@@ -377,6 +383,7 @@ mesh = SubResource("BoxMesh_7g8be")
 
 [node name="Player" parent="." instance=ExtResource("2_senwc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8402, 1.70958, 0.233796)
+collision_mask = 2
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.757, 2.16721, 25.246)
@@ -443,15 +450,17 @@ surface_material_override/0 = SubResource("StandardMaterial3D_6kjn5")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/road/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0eunq")
 
-[node name="Road Line" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
+[node name="Ground" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
 transform = Transform3D(1.25429, 0, 0, 0, 1, 0, 0, 0, 1, 77.5222, 0.0742531, 0.249393)
 mesh = SubResource("BoxMesh_v6e3r")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_unerv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line"]
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Ground"]
+collision_layer = 2
+collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Ground/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qpban")
 
 [node name="Road Line2" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
@@ -973,3 +982,24 @@ shape = SubResource("ConcavePolygonShape3D_w44tq")
 
 [node name="Sketchfab_Scene2" parent="." instance=ExtResource("11_o81c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5444, 3.43946, 25.9314)
+
+[node name="Box" parent="." instance=ExtResource("12_s8u41")]
+
+[node name="Box2" parent="." instance=ExtResource("12_s8u41")]
+transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 30.6997, 8.23699, 0)
+
+[node name="Box3" parent="." instance=ExtResource("12_s8u41")]
+transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 30.6997, 10.237, 0)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2958, 11.9403, -0.140193)
+collision_layer = 8
+collision_mask = 11
+mass = 0.01
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+material_override = ExtResource("12_qh6wi")
+mesh = SubResource("SphereMesh_qqm72")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("SphereShape3D_jcxse")
