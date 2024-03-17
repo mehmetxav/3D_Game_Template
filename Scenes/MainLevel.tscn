@@ -991,15 +991,15 @@ transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.4
 [node name="Box3" parent="." instance=ExtResource("12_s8u41")]
 transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 30.6997, 10.237, 0)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
+[node name="Box4" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2958, 11.9403, -0.140193)
 collision_layer = 8
 collision_mask = 11
 mass = 0.01
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Box4"]
 material_override = ExtResource("12_qh6wi")
 mesh = SubResource("SphereMesh_qqm72")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box4"]
 shape = SubResource("SphereShape3D_jcxse")
