@@ -7,6 +7,7 @@
 size = Vector3(0.706116, 2.13895, 1.94287)
 
 [node name="Area3D5" type="Area3D"]
+transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 0, 0, 0)
 collision_layer = 2
 script = ExtResource("1_mgf4a")
 
