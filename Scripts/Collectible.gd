@@ -1,6 +1,7 @@
 extends Area3D
 
 var is_collected = false
+signal item_collected
 
 func _on_body_entered(body):
 	# when player enters
@@ -9,6 +10,7 @@ func _on_body_entered(body):
 	print("apple count", global.apple_count)
 	print(body)
 	body.play_pickup_sound()
-	queue_free() # remove object from scene
-	
-	
+	emit_signal("item_collected")
+	queue_free() # remove object from scene((
+
+

@@ -1,10 +1,12 @@
-[gd_scene load_steps=49 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=51 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="AudioStream" uid="uid://c4k82oqrxyn5b" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
 [ext_resource type="PackedScene" uid="uid://bgtfliaa02a4l" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="AudioStream" uid="uid://bvq6wvt43enda" path="res://audio/oji - idée. (en mi bémol majeur).mp3" id="2_ij4df"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
 [ext_resource type="PackedScene" uid="uid://dv7xji8p36hpa" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
 [ext_resource type="PackedScene" uid="uid://bnaku76ccr327" path="res://Models/window.glb" id="5_ekamu"]
 [ext_resource type="PackedScene" uid="uid://d31hvy227dlne" path="res://Models/centre_table.glb" id="6_c6vpx"]
@@ -156,6 +158,12 @@ size = Vector3(5, 5, 5)
 [sub_resource type="SphereShape3D" id="SphereShape3D_jcxse"]
 
 [node name="MainLevel" type="Node3D"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("1_3mcan")]
+mouse_filter = 2
+script = ExtResource("2_vd5i5")
 
 [node name="posiitonal sound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("1_0uy7k")
@@ -473,14 +481,17 @@ transform = Transform3D(1.19249e-08, -3.48787e-16, -1, 3.48787e-16, 1, -3.48787e
 [node name="Table_Scene" parent="InteriorHouse" instance=ExtResource("6_c6vpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6692, 0.584434, 24.8445)
 
-[node name="Moneycase" parent="." instance=ExtResource("7_rcf5u")]
+[node name="Collectible" type="Node3D" parent="."]
 transform = Transform3D(-0.0163704, 0, -0.999866, 0, 1, 0, 0.999866, 0, -0.0163704, 31.5059, 1.68418, 24.0124)
 
-[node name="Moneycase2" parent="." instance=ExtResource("7_rcf5u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9962, 1.13543, -0.380557)
+[node name="Moneycase" parent="Collectible" instance=ExtResource("7_rcf5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Moneycase3" parent="." instance=ExtResource("7_rcf5u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9962, 1.13543, -3.70835)
+[node name="Moneycase2" parent="Collectible" instance=ExtResource("7_rcf5u")]
+transform = Transform3D(-0.0163704, 0, 0.999866, 0, 1, 0, -0.999866, 0, -0.0163704, -24.1358, -0.54875, 15.9069)
+
+[node name="Moneycase3" parent="Collectible" instance=ExtResource("7_rcf5u")]
+transform = Transform3D(-0.0163704, 0, 0.999866, 0, 1, 0, -0.999866, 0, -0.0163704, -27.4631, -0.54875, 15.9614)
 
 [node name="carpet" parent="." instance=ExtResource("8_0hebu")]
 transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 30.6274, 0.643311, 25.1402)
@@ -1080,3 +1091,5 @@ shape = SubResource("SphereShape3D_jcxse")
 
 [node name="Door" parent="." instance=ExtResource("16_14qrx")]
 transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.0300326, 27.0256, -2.89221, 23.8313)
+
+[connection signal="item_collected" from="Collectible/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]

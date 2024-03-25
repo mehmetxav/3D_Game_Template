@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtar81oh4msu8"]
+[gd_scene load_steps=3 format=3 uid="uid://dtar81oh4msu8"]
 
 [ext_resource type="Script" path="res://Scripts/Collectible.gd" id="1_mgf4a"]
-[ext_resource type="PackedScene" uid="uid://qwfnlre01bsl" path="res://Models/briefcase_with_money.glb" id="2_8m5qy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tnl1s"]
 size = Vector3(0.706116, 2.13895, 1.94287)
@@ -15,6 +14,6 @@ script = ExtResource("1_mgf4a")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27929, 0.754337, 0.718994)
 shape = SubResource("BoxShape3D_tnl1s")
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("2_8m5qy")]
+[node name="Sketchfab_Scene" type="Node3D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
