@@ -27,7 +27,7 @@ window/size/fullscreen=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/csg_mesher/plugin.cfg")
+enabled=PackedStringArray()
 
 [gui]
 
