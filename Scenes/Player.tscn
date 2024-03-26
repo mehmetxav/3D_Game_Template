@@ -44,6 +44,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.501831, -0.781743, -1.00293
 [node name="jump" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.86861, 0)
 stream = ExtResource("3_ywpml")
+volume_db = -6.095
 
 [node name="throw" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.15671)
@@ -52,9 +53,11 @@ stream = ExtResource("4_ftt8u")
 [node name="pickup" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.497669, 2.98023e-08, 0.000226021)
 stream = ExtResource("5_12ayb")
+volume_db = -6.857
 
 [node name="footstep" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_mlaug")
+volume_db = -40.0
 
 [node name="footsteptimer" type="Timer" parent="."]
 wait_time = 0.3

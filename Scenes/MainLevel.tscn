@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
 [ext_resource type="PackedScene" uid="uid://c1fosiei7rc4j" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
-[ext_resource type="AudioStream" uid="uid://bbqwgxbucd04q" path="res://audio/oji - idée. (en mi bémol majeur).mp3" id="2_ij4df"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
+[ext_resource type="AudioStream" uid="uid://dsyqcjev53syy" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
 [ext_resource type="PackedScene" uid="uid://c4y42y80r018i" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
 [ext_resource type="PackedScene" uid="uid://dv6wipg52l875" path="res://Models/window.glb" id="5_ekamu"]
 [ext_resource type="PackedScene" uid="uid://v72q200jlvlx" path="res://Models/centre_table.glb" id="6_c6vpx"]
@@ -153,8 +153,8 @@ script = ExtResource("2_vd5i5")
 stream = ExtResource("1_0uy7k")
 
 [node name="backgroundmusic" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("2_ij4df")
-volume_db = -20.0
+stream = ExtResource("4_6tdpm")
+volume_db = 8.952
 autoplay = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -479,7 +479,7 @@ mesh = SubResource("BoxMesh_7g8be")
 transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.0300326, 27.0256, -2.89221, 23.8313)
 
 [node name="Player" parent="." instance=ExtResource("2_senwc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2482, 1.70958, 5.27254)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2332, 1.68022, 5.26952)
 collision_mask = 4098
 
 [node name="InteriorHouse" type="StaticBody3D" parent="."]
