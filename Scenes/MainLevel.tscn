@@ -479,7 +479,7 @@ mesh = SubResource("BoxMesh_7g8be")
 transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.0300326, 27.0256, -2.89221, 23.8313)
 
 [node name="Player" parent="." instance=ExtResource("2_senwc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2332, 1.68022, 5.26952)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4287, 1.63408, 25.2211)
 collision_mask = 4098
 
 [node name="InteriorHouse" type="StaticBody3D" parent="."]
