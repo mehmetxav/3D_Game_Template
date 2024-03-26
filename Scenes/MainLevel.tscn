@@ -487,7 +487,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0144215, 0, 0)
 collision_layer = 4096
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteriorHouse"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6648, 1.38624, 24.7132)
+transform = Transform3D(1.03843, 0, 0, 0, 0.804817, 0, 0, 0, 1.03843, 30.6648, 1.22473, 24.7132)
 shape = SubResource("BoxShape3D_jw5tr")
 
 [node name="Chair_Scene2" parent="InteriorHouse" instance=ExtResource("4_76rc5")]
