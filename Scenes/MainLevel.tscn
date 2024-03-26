@@ -1,23 +1,23 @@
 [gd_scene load_steps=51 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="AudioStream" uid="uid://c4k82oqrxyn5b" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="AudioStream" uid="uid://hutccyogsh1v" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
-[ext_resource type="PackedScene" uid="uid://bgtfliaa02a4l" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://c1fosiei7rc4j" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
-[ext_resource type="AudioStream" uid="uid://bvq6wvt43enda" path="res://audio/oji - idée. (en mi bémol majeur).mp3" id="2_ij4df"]
+[ext_resource type="AudioStream" uid="uid://bbqwgxbucd04q" path="res://audio/oji - idée. (en mi bémol majeur).mp3" id="2_ij4df"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
-[ext_resource type="PackedScene" uid="uid://dv7xji8p36hpa" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://bnaku76ccr327" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://d31hvy227dlne" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="PackedScene" uid="uid://c4y42y80r018i" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://dv6wipg52l875" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://v72q200jlvlx" path="res://Models/centre_table.glb" id="6_c6vpx"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://bxn18lfndrxt2" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="PackedScene" uid="uid://b74qorrcolqjc" path="res://Models/floor_carpet.glb" id="8_0hebu"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
-[ext_resource type="PackedScene" uid="uid://5lsyoa68u05x" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="PackedScene" uid="uid://blibe0jaxqvy0" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
 [ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
 [ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
-[ext_resource type="PackedScene" uid="uid://c6vfhuaidwx0n" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="PackedScene" uid="uid://b53gaevco31hn" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -182,6 +182,7 @@ environment = SubResource("Environment_26jos")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 22.7897, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 1"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 1/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -195,6 +196,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 37.3795, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 3"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 3/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -208,6 +210,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 47.734, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 4"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 4/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -221,6 +224,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 59.4271, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 5"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 5/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -234,6 +238,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 73.01, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 6"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 6/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -247,6 +252,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 86.9132, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 7"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 7/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -260,6 +266,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 100.289, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 8"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 8/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -273,6 +280,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 118.075, 0.525174, 4.81669)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 9"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 9/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -286,6 +294,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 118.111, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 10"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 10/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -299,6 +308,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(1, 0, -9.58579e-10, 0, 1, 0, -9.58579e-10, 0, 1, 3.54828, 0, 94.912)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 10/Light 18"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 10/Light 18/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -312,6 +322,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 129.342, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 19"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 19/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -325,6 +336,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 100.41, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 11"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 11/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -338,6 +350,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 86.8885, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 12"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 12/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -351,6 +364,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 71.9547, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 13"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 13/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -364,6 +378,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 59.1624, 0.540698, -5.65579)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 14"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 14/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -377,6 +392,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 47.5074, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 15"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 15/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -390,6 +406,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 37.1866, 0.525178, -5.66254)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 16"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 16/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -403,6 +420,7 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 130.117, 0.525178, 4.76168)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 18"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
 transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
@@ -511,6 +529,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_6kjn5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/road"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/road/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0eunq")
@@ -535,6 +554,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line2"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -546,6 +566,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line3"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -557,6 +578,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line4"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -568,6 +590,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line5"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -579,6 +602,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line6"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -590,6 +614,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line7"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -601,6 +626,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line8"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -612,6 +638,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line9"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -623,6 +650,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line10"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line10/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -634,6 +662,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line11"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line11/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -645,6 +674,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line12"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line12/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -656,6 +686,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line13"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line13/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -667,6 +698,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line14"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line14/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -678,6 +710,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line15"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line15/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -689,6 +722,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line16"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line16/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -700,6 +734,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line17"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line17/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -711,6 +746,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line18"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line18/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -722,6 +758,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line19"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line19/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -733,6 +770,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line20"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line20/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -744,6 +782,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line21"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line21/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -755,6 +794,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line22"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line22/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -766,6 +806,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line23"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line23/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -777,6 +818,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line24"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line24/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -788,6 +830,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line25"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line25/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -799,6 +842,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line26"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line26/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -810,6 +854,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line27"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line27/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -821,6 +866,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line28"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line28/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -832,6 +878,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line29"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line29/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -843,6 +890,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line30"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line30/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -854,6 +902,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line31"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line31/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -865,6 +914,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line32"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line32/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -876,6 +926,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line33"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line33/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -887,6 +938,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line34"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line34/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -898,6 +950,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line35"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line35/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -909,6 +962,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line36"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line36/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -920,6 +974,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line37"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line37/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -931,6 +986,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line38"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line38/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -942,6 +998,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line39"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line39/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -953,6 +1010,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line40"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line40/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -964,6 +1022,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line41"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line41/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -975,6 +1034,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line42"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line42/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -986,6 +1046,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line43"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line43/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -997,6 +1058,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line44"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line44/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -1008,6 +1070,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line45"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line45/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -1019,6 +1082,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line46"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line46/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -1030,6 +1094,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line47"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line47/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
@@ -1041,6 +1106,7 @@ skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line48"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line48/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
