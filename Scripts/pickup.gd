@@ -41,6 +41,7 @@ func _unhandled_input(_event):
 	
 	#detect user clicked throw
 	if Input.is_action_just_pressed("throw") and pickup_object:
+		$"../../throw".play()
 		#get direction of camera
 		var dir = -camera.global_transform.basis.z.normalized()
 		#add an upward direction

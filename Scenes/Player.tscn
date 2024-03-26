@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://Scripts/FirstPersonController.gd" id="1_qtton"]
 [ext_resource type="Script" path="res://Scripts/pickup.gd" id="2_jgfki"]
 [ext_resource type="AudioStream" uid="uid://uahxietuyto4" path="res://audio/Jump 1.wav" id="3_ywpml"]
-[ext_resource type="AudioStream" uid="uid://j7rtwskbvmh3" path="res://audio/Blip_select 1.wav" id="4_ftt8u"]
-[ext_resource type="AudioStream" uid="uid://dhcfwpppbammy" path="res://audio/Pickup_coin 1.wav" id="5_12ayb"]
-[ext_resource type="AudioStream" uid="uid://c28n0ntfd4bh7" path="res://audio/Hit_hurt 1.wav" id="6_mlaug"]
+[ext_resource type="AudioStream" uid="uid://dort2nhndnydm" path="res://audio/384859__ali_6868__left-grassgrassy-footstep-3.wav" id="4_kosuc"]
+[ext_resource type="AudioStream" uid="uid://c8rl5thar2s1s" path="res://audio/60013__qubodup__whoosh.mp3" id="4_o74xx"]
+[ext_resource type="AudioStream" uid="uid://btry2h0cqjxw3" path="res://audio/665182__el_boss__item-or-material-pickup-pop-2-of-3.wav" id="5_ij06k"]
 
 [sub_resource type="CapsuleMesh" id="1"]
 
@@ -44,20 +44,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.501831, -0.781743, -1.00293
 [node name="jump" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.86861, 0)
 stream = ExtResource("3_ywpml")
-volume_db = -6.095
+volume_db = -45.0
 
 [node name="throw" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.15671)
-stream = ExtResource("4_ftt8u")
+stream = ExtResource("4_o74xx")
+volume_db = -3.047
 
 [node name="pickup" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.497669, 2.98023e-08, 0.000226021)
-stream = ExtResource("5_12ayb")
-volume_db = -6.857
+stream = ExtResource("5_ij06k")
+volume_db = -5.619
 
 [node name="footstep" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("6_mlaug")
-volume_db = -40.0
+stream = ExtResource("4_kosuc")
+volume_db = -5.714
 
 [node name="footsteptimer" type="Timer" parent="."]
 wait_time = 0.3
