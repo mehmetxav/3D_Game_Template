@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dtar81oh4msu8"]
 
 [ext_resource type="Script" path="res://Scripts/Collectible.gd" id="1_mgf4a"]
-[ext_resource type="PackedScene" uid="uid://knanuksb50f" path="res://Models/briefcase_with_money.glb" id="2_ab6jw"]
+[ext_resource type="PackedScene" uid="uid://c0cqqr56ewm5f" path="res://Models/briefcase_with_money.glb" id="2_ab6jw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tnl1s"]
 size = Vector3(0.706116, 2.13895, 1.94287)

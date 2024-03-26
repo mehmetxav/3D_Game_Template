@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/FirstPersonController.gd" id="1_qtton"]
 [ext_resource type="Script" path="res://Scripts/pickup.gd" id="2_jgfki"]
-[ext_resource type="AudioStream" uid="uid://dgc5g0romboxm" path="res://audio/Jump 1.wav" id="3_ywpml"]
-[ext_resource type="AudioStream" uid="uid://di8r5o5ho1bx1" path="res://audio/Blip_select 1.wav" id="4_ftt8u"]
-[ext_resource type="AudioStream" uid="uid://dixqp27bx3oow" path="res://audio/Pickup_coin 1.wav" id="5_12ayb"]
-[ext_resource type="AudioStream" uid="uid://df6aihy8w624l" path="res://audio/Hit_hurt 1.wav" id="6_mlaug"]
+[ext_resource type="AudioStream" uid="uid://uahxietuyto4" path="res://audio/Jump 1.wav" id="3_ywpml"]
+[ext_resource type="AudioStream" uid="uid://j7rtwskbvmh3" path="res://audio/Blip_select 1.wav" id="4_ftt8u"]
+[ext_resource type="AudioStream" uid="uid://dhcfwpppbammy" path="res://audio/Pickup_coin 1.wav" id="5_12ayb"]
+[ext_resource type="AudioStream" uid="uid://c28n0ntfd4bh7" path="res://audio/Hit_hurt 1.wav" id="6_mlaug"]
 
 [sub_resource type="CapsuleMesh" id="1"]
 
@@ -62,3 +62,4 @@ one_shot = true
 autostart = true
 
 [connection signal="body_entered" from="Camera/pickuparea" to="Camera/pickuparea" method="_on_body_entered"]
+[connection signal="body_exited" from="Camera/pickuparea" to="Camera/pickuparea" method="_on_body_exited"]

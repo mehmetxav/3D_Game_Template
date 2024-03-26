@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b4w4jjsshwydp"]
 
-[ext_resource type="Texture2D" uid="uid://so4n4q5b8jmw" path="res://UI/apple_icon.png" id="1_sjmgw"]
+[ext_resource type="Texture2D" uid="uid://ih8d1tenjris" path="res://UI/apple_icon.png" id="1_sjmgw"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3

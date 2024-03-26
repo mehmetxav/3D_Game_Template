@@ -1155,6 +1155,9 @@ shape = SubResource("SphereShape3D_jcxse")
 [node name="Door" parent="." instance=ExtResource("16_14qrx")]
 transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.0300326, 27.0256, -2.89221, 23.8313)
 
+[connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="item_collected" from="Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Moneycase2" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Moneycase3" to="UI/HUD" method="_on_moneycase_item_collected"]
+
+[editable path="Player"]
