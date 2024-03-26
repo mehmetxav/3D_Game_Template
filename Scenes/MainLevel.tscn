@@ -20,8 +20,10 @@
 [ext_resource type="PackedScene" uid="uid://b53gaevco31hn" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Sky" id="Sky_4hqd2"]
 sky_material = SubResource("ProceduralSkyMaterial_x0bb1")
@@ -29,6 +31,7 @@ sky_material = SubResource("ProceduralSkyMaterial_x0bb1")
 [sub_resource type="Environment" id="Environment_26jos"]
 background_mode = 2
 sky = SubResource("Sky_4hqd2")
+ambient_light_color = Color(0.596078, 0.596078, 0.596078, 1)
 tonemap_mode = 2
 glow_enabled = true
 
@@ -170,6 +173,34 @@ transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 1/StaticBody3D"]
+transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="Light 2" parent="streetlights" instance=ExtResource("1_w8yd5")]
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 15.4198, 0.525178, 4.76168)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 2"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 2/StaticBody3D"]
+transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 2/StaticBody3D"]
+transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="Light 17" parent="streetlights" instance=ExtResource("1_w8yd5")]
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 15.4198, 0.525178, -5.33734)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 17"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 17/StaticBody3D"]
+transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 17/StaticBody3D"]
 transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
@@ -448,12 +479,8 @@ mesh = SubResource("BoxMesh_7g8be")
 transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.0300326, 27.0256, -2.89221, 23.8313)
 
 [node name="Player" parent="." instance=ExtResource("2_senwc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8402, 1.70958, 0.233796)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2482, 1.70958, 5.27254)
 collision_mask = 4098
-
-[node name="light inside of house" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.757, 2.16721, 25.246)
-omni_range = 7.09522
 
 [node name="InteriorHouse" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0144215, 0, 0)
@@ -483,6 +510,10 @@ transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-
 
 [node name="Lights" parent="InteriorHouse" instance=ExtResource("11_o81c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5588, 3.43946, 25.9314)
+
+[node name="light inside of house" type="OmniLight3D" parent="InteriorHouse"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7714, 2.16721, 25.246)
+omni_range = 7.09522
 
 [node name="Enemy" type="Node3D" parent="."]
 script = ExtResource("9_mkh4i")
@@ -1134,6 +1165,108 @@ mesh = SubResource("SphereMesh_qqm72")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rigidobjects/Box4"]
 shape = SubResource("SphereShape3D_jcxse")
+
+[node name="Lighting for all of the street lamps" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.7499, 5.42115, 4.10443)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D19" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7554, 5.42115, 4.10443)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.0329, 5.42115, -5.98869)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D20" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5482, 5.42115, -5.98869)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2946, 5.42115, -5.98869)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2946, 5.42115, 4.54404)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5243, 5.42115, 4.54404)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5243, 5.42115, -5.65969)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.2236, 5.42115, -5.65969)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.2236, 5.42115, 4.42133)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8968, 5.42115, 4.42133)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8968, 5.42115, -5.73639)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8605, 5.42115, -5.73639)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8605, 5.42115, 4.5114)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.171, 5.42115, 4.5114)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.171, 5.42115, -5.70759)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.932, 5.42115, -5.70759)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.932, 5.42115, 4.33425)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D17" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.845, 5.42115, 4.33425)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D18" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.839, 5.42115, -6.64976)
+light_energy = 16.0
+omni_range = 9.12502
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
