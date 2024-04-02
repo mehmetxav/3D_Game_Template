@@ -594,7 +594,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2668, 0.731549, 9.01119)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4059, 0.731549, 9.01119)
 
 [node name="Enemy" parent="Enemy" node_paths=PackedStringArray("patrol_locations") instance=ExtResource("9_imeyv")]
-transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 19.9904, 0.548481, 17.6572)
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 19.9982, 0.548481, 17.6527)
 patrol_locations = [NodePath("../patrol 1/Marker3D"), NodePath("../patrol 1/Marker3D2"), NodePath("../patrol 1/Marker3D3")]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]

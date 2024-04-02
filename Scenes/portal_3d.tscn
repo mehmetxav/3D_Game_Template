@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://rv2kkhm0d8sk"]
+
+[ext_resource type="Script" path="res://Scripts/portal.gd" id="1_5ducv"]
+[ext_resource type="Texture2D" uid="uid://c0myhqwchlgoe" path="res://Textures/grid_1.png" id="2_bitjf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8rkt7"]
+albedo_texture = ExtResource("2_bitjf")
+
+[sub_resource type="TorusMesh" id="TorusMesh_ih6yr"]
+inner_radius = 2.5
+outer_radius = 3.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2dl3v"]
+size = Vector3(4.38107, 4.54779, 0.617676)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="portal" type="Area3D" parent="."]
+script = ExtResource("1_5ducv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="portal"]
+transform = Transform3D(1, 0, -1.5246e-23, -1.5246e-23, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_8rkt7")
+mesh = SubResource("TorusMesh_ih6yr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="portal"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.225143, -0.0298767, -0.191162)
+shape = SubResource("BoxShape3D_2dl3v")
+
+[connection signal="body_entered" from="portal" to="portal" method="_on_body_entered"]
+[connection signal="body_exited" from="portal" to="portal" method="_on_body_exited"]
