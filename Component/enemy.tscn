@@ -1,15 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://epmelqjhdi3h"]
+[gd_scene load_steps=8 format=3 uid="uid://epmelqjhdi3h"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_vy8ev"]
-[ext_resource type="PackedScene" uid="uid://b460y0mgew65" path="res://Models/garden_crawler_new.glb" id="2_uyat0"]
+[ext_resource type="PackedScene" uid="uid://bl2uccghb24ks" path="res://Models/garden_crawler_new.glb" id="2_uyat0"]
+[ext_resource type="AudioStream" uid="uid://b6bvy1xhlmirv" path="res://audio/Hit_hurt 1.wav" id="3_u3pse"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_ucvxg"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_xq478"]
 radius = 0.515478
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_7mh0a"]
+size = Vector3(1, 2.97607, 5.33527)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oih5o"]
+size = Vector3(1, 1.99847, 1)
+
 [node name="Enemy" type="CharacterBody3D" groups=["enemies"]]
+collision_layer = 32
 script = ExtResource("1_vy8ev")
+game_over_scene = "res://UI/game_over.tscn"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, -1.5246e-23, -1.5246e-23, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.918109, 0)
@@ -23,4 +32,27 @@ shape = SubResource("SphereShape3D_xq478")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="garden_crawler_new" parent="." instance=ExtResource("2_uyat0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.683902, 0, -0.51145)
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 0, 0, 0)
+
+[node name="playerdetectarea" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.57887)
+collision_layer = 64
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="playerdetectarea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00546026, 1.75852, 1.84853)
+shape = SubResource("BoxShape3D_7mh0a")
+
+[node name="DetectSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_u3pse")
+
+[node name="hitbox" type="Area3D" parent="."]
+collision_layer = 128
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.473803, 2.24013, -0.328487)
+shape = SubResource("BoxShape3D_oih5o")
+
+[connection signal="body_entered" from="playerdetectarea" to="." method="_on_playerdetectarea_body_entered"]
+[connection signal="body_exited" from="playerdetectarea" to="." method="_on_playerdetectarea_body_exited"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

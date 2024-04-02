@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/FirstPersonController.gd" id="1_qtton"]
 [ext_resource type="Script" path="res://Scripts/pickup.gd" id="2_jgfki"]
-[ext_resource type="AudioStream" uid="uid://uahxietuyto4" path="res://audio/Jump 1.wav" id="3_ywpml"]
-[ext_resource type="AudioStream" uid="uid://dort2nhndnydm" path="res://audio/384859__ali_6868__left-grassgrassy-footstep-3.wav" id="4_kosuc"]
-[ext_resource type="AudioStream" uid="uid://c8rl5thar2s1s" path="res://audio/60013__qubodup__whoosh.mp3" id="4_o74xx"]
-[ext_resource type="AudioStream" uid="uid://btry2h0cqjxw3" path="res://audio/665182__el_boss__item-or-material-pickup-pop-2-of-3.wav" id="5_ij06k"]
+[ext_resource type="AudioStream" uid="uid://c3sdg7u5hscu7" path="res://audio/Jump 1.wav" id="3_ywpml"]
+[ext_resource type="AudioStream" uid="uid://cjk0oyccrgd3o" path="res://audio/384859__ali_6868__left-grassgrassy-footstep-3.wav" id="4_kosuc"]
+[ext_resource type="AudioStream" uid="uid://qxav15vxfl1f" path="res://audio/60013__qubodup__whoosh.mp3" id="4_o74xx"]
+[ext_resource type="AudioStream" uid="uid://bgn7el0vwhhwp" path="res://audio/665182__el_boss__item-or-material-pickup-pop-2-of-3.wav" id="5_ij06k"]
 
 [sub_resource type="CapsuleMesh" id="1"]
 
@@ -15,6 +15,7 @@
 size = Vector3(1.49615, 1.58154, 1)
 
 [node name="Player" type="CharacterBody3D"]
+collision_mask = 126
 script = ExtResource("1_qtton")
 
 [node name="MeshInstance" type="MeshInstance3D" parent="."]
