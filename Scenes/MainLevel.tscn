@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=49 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="AudioStream" uid="uid://c5xml63tgy6n1" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
@@ -140,6 +140,15 @@ size = Vector3(5, 5, 5)
 [sub_resource type="SphereMesh" id="SphereMesh_qqm72"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_jcxse"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lrcts"]
+size = Vector2(4, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlh45"]
+albedo_color = Color(0.588235, 0.294118, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ip8r"]
+size = Vector3(3.94263, 1, 15.4682)
 
 [node name="MainLevel" type="Node3D"]
 
@@ -1356,6 +1365,20 @@ omni_range = 9.12502
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.839, 5.42115, -6.64976)
 light_energy = 16.0
 omni_range = 9.12502
+
+[node name="Pathway from house to the road" type="Node3D" parent="."]
+
+[node name="Area3D" type="Area3D" parent="Pathway from house to the road"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Pathway from house to the road/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7503, 0.583434, 12.2298)
+mesh = SubResource("PlaneMesh_lrcts")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_mlh45")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pathway from house to the road/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7323, 0.0357764, 12.27)
+shape = SubResource("BoxShape3D_8ip8r")
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
