@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var type = "case"
+@export var type = "apple"
 var is_collected = false
 signal item_collected
 

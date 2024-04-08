@@ -32,6 +32,8 @@ func _physics_process(delta):
 		
 	
 	if nav_agent.distance_to_target() < 2 and is_following_player:
+		global.apple_count = 0
+		global.has_special_key = false
 		get_tree().change_scene_to_file(game_over_scene)
 		return
 

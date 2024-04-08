@@ -1386,7 +1386,7 @@ shape = SubResource("BoxShape3D_8ip8r")
 transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 139.263, 0.781345, -0.753388)
 level_to_load = "res://Scenes/Levels/level_2.tscn"
 
-[node name="Collectible" parent="." instance=ExtResource("20_ffobn")]
+[node name="Key" parent="." instance=ExtResource("20_ffobn")]
 transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 138.606, 0.778809, -0.720408)
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]

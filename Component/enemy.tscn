@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://epmelqjhdi3h"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_vy8ev"]
-[ext_resource type="PackedScene" uid="uid://bl2uccghb24ks" path="res://Models/garden_crawler_new.glb" id="2_uyat0"]
-[ext_resource type="AudioStream" uid="uid://ddutk8j56uq4j" path="res://audio/555412__tonsil5__zombie-death-1.wav" id="3_uuj37"]
+[ext_resource type="PackedScene" uid="uid://c70dxheb5tnpg" path="res://Models/garden_crawler_new.glb" id="2_uyat0"]
+[ext_resource type="AudioStream" uid="uid://brujbfahx4s7r" path="res://audio/555412__tonsil5__zombie-death-1.wav" id="3_uuj37"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_ucvxg"]
 
