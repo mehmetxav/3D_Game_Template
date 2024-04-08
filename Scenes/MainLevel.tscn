@@ -1,23 +1,25 @@
-[gd_scene load_steps=49 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=51 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="AudioStream" uid="uid://c5xml63tgy6n1" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="AudioStream" uid="uid://dahaj1usqad4w" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
-[ext_resource type="PackedScene" uid="uid://ux1mydd1ye34" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://dvqtmwgypv80t" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
-[ext_resource type="AudioStream" uid="uid://b01dnjs1kjt5a" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
-[ext_resource type="PackedScene" uid="uid://rhvyj5r8pt21" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://857b40m3rltg" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://xcajkye0oi50" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="AudioStream" uid="uid://djcj88nvv77g6" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
+[ext_resource type="PackedScene" uid="uid://blupdie0lxv5" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://bo0c7oxonetp0" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://crtbsgp5w8ikn" path="res://Models/centre_table.glb" id="6_c6vpx"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://d2jdn1cgvl3p8" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="PackedScene" uid="uid://4qjktiuh6ujj" path="res://Models/floor_carpet.glb" id="8_0hebu"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
-[ext_resource type="PackedScene" uid="uid://c6550mw6y2qv5" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="PackedScene" uid="uid://y4l1udvwfomq" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
 [ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
 [ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
-[ext_resource type="PackedScene" uid="uid://bhd7u4a5fq12k" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="PackedScene" uid="uid://dkca27k2h2f3h" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="PackedScene" uid="uid://74xvu3f3ry78" path="res://Scenes/Components/area_portal.tscn" id="19_dm4iw"]
+[ext_resource type="PackedScene" uid="uid://u2yadxjmjjlb" path="res://Scenes/special_key.tscn" id="20_ffobn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -1380,9 +1382,17 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mlh45")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7323, 0.0357764, 12.27)
 shape = SubResource("BoxShape3D_8ip8r")
 
+[node name="AreaPortal" parent="." instance=ExtResource("19_dm4iw")]
+transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 139.263, 0.781345, -0.753388)
+level_to_load = "res://Scenes/Levels/level_2.tscn"
+
+[node name="Collectible" parent="." instance=ExtResource("20_ffobn")]
+transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 138.606, 0.778809, -0.720408)
+
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase2" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase3" to="UI/HUD" method="_on_moneycase_item_collected"]
+[connection signal="update_console" from="AreaPortal" to="UI/HUD" method="_on_area_portal_update_console"]
 
 [editable path="Player"]

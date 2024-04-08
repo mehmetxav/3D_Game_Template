@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://u2yadxjmjjlb"]
+
+[ext_resource type="Script" path="res://Scripts/Collectible.gd" id="1_x263m"]
+[ext_resource type="Material" path="res://Materials/GreenGrid.tres" id="2_ht2hi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tnl1s"]
+size = Vector3(0.33168, 0.170689, 0.862915)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6l86n"]
+size = Vector3(0.1, 0.1, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2el01"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tfacu"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.2
+
+[node name="Collectible" type="Area3D"]
+transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 0, 0, -0.720408)
+collision_layer = 2
+script = ExtResource("1_x263m")
+type = "special_key"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00003, 0, -1.16881e-07, 0, 1, 0, 1.16881e-07, 0, 1.00003, 0.0156826, 0.0166139, 0.61004)
+shape = SubResource("BoxShape3D_tnl1s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00583524, 0, 0.766804)
+material_override = ExtResource("2_ht2hi")
+mesh = SubResource("BoxMesh_6l86n")
+surface_material_override/0 = SubResource("StandardMaterial3D_2el01")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 2.77556e-17, 0, 1, 0.00355321, 0, 0.466927)
+material_override = ExtResource("2_ht2hi")
+mesh = SubResource("CylinderMesh_tfacu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -10,3 +10,7 @@ func _on_moneycase_item_collected():
 func _on_pickuparea_update_console(message):
 	$CenterContainer2/Console.text = message
 
+
+
+func _on_area_portal_update_console(message):
+	$CenterContainer2/Console.text = message
