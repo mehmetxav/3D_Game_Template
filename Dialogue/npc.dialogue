@@ -1,0 +1,29 @@
+~ npc_intro
+
+Jerry: [[Hi|Hello|Howdy]], My name is Jerry.
+Mehmet: Hi. 
+Jerry: How's it going?
+- It's bad
+	Mehmet: It's bad.
+	=> END
+- It's good!
+	Mehmet: It's good!
+	=> collect_key
+
+=> END
+
+~ collect_key
+Jerry: I have a key to the portal. You can exchange 3 money cases for the key.
+- Exchange money cases.
+	if global.apple_count >= 3:
+		Jerry: Great, here is the key!
+		set global.has_special_key = true
+		set global.apple_count = 0
+		=> END
+	else:
+		Jerry: You don't have enough money cases!
+		=> END
+- Keep money cases.
+	Jerry: Okay, goodbye!
+	=> END
+=> END

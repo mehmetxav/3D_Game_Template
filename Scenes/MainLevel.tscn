@@ -1,25 +1,27 @@
-[gd_scene load_steps=51 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=53 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="AudioStream" uid="uid://dahaj1usqad4w" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="AudioStream" uid="uid://dkkmwiabloadd" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
-[ext_resource type="PackedScene" uid="uid://dvqtmwgypv80t" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://d2x8i127c26q3" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
-[ext_resource type="AudioStream" uid="uid://djcj88nvv77g6" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
-[ext_resource type="PackedScene" uid="uid://blupdie0lxv5" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://bo0c7oxonetp0" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://crtbsgp5w8ikn" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="AudioStream" uid="uid://d3lv6rsr7olcw" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
+[ext_resource type="PackedScene" uid="uid://jo45al08wfle" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://bxo23xdr5slgo" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://bx6goycj6v6jq" path="res://Models/centre_table.glb" id="6_c6vpx"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://4qjktiuh6ujj" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="PackedScene" uid="uid://1efrjhxbpc4u" path="res://Models/floor_carpet.glb" id="8_0hebu"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
-[ext_resource type="PackedScene" uid="uid://y4l1udvwfomq" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="PackedScene" uid="uid://cfocukxwsyvcn" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
 [ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
 [ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
-[ext_resource type="PackedScene" uid="uid://dkca27k2h2f3h" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="PackedScene" uid="uid://d3ql2b68l1e0q" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 [ext_resource type="PackedScene" uid="uid://74xvu3f3ry78" path="res://Scenes/Components/area_portal.tscn" id="19_dm4iw"]
 [ext_resource type="PackedScene" uid="uid://u2yadxjmjjlb" path="res://Scenes/special_key.tscn" id="20_ffobn"]
+[ext_resource type="PackedScene" uid="uid://ioxvc3f54u1t" path="res://Scenes/npc.tscn" id="21_dgjpc"]
+[ext_resource type="PackedScene" uid="uid://ddpo1x4yssh5i" path="res://Component/tree.tscn" id="22_n6m7t"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -419,6 +421,20 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
+[node name="Light 23" parent="streetlights" instance=ExtResource("1_w8yd5")]
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 136.537, 0.525178, -5.66254)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 23"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 23/StaticBody3D"]
+transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 23/StaticBody3D"]
+transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
 [node name="Light 11" parent="streetlights" instance=ExtResource("1_w8yd5")]
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 100.41, 0.525178, -5.66254)
 
@@ -510,10 +526,24 @@ transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.03735
 collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 1.09299e-08, 0, 1, 0, -1.28757e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
+transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="Light 22" parent="streetlights" instance=ExtResource("1_w8yd5")]
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 137.508, 0.525178, 4.76168)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 22"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 22/StaticBody3D"]
+transform = Transform3D(1, 0, 1.09299e-08, 0, 1, 0, -1.28757e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 22/StaticBody3D"]
 transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
@@ -1328,6 +1358,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8968, 5.42115, -5.73639)
 light_energy = 16.0
 omni_range = 9.12502
 
+[node name="OmniLight3D25" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.294, 5.42115, 18.9587)
+light_energy = 16.0
+omni_range = 9.12502
+
 [node name="OmniLight3D11" type="OmniLight3D" parent="Lighting for all of the street lamps"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8605, 5.42115, -5.73639)
 light_energy = 16.0
@@ -1363,8 +1398,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.845, 5.42115, 4.33425)
 light_energy = 16.0
 omni_range = 9.12502
 
+[node name="OmniLight3D24" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.626, 5.41958, 4.33431)
+light_energy = 16.0
+omni_range = 9.12502
+
 [node name="OmniLight3D18" type="OmniLight3D" parent="Lighting for all of the street lamps"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.839, 5.42115, -6.64976)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D23" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.089, 5.42115, -6.64976)
 light_energy = 16.0
 omni_range = 9.12502
 
@@ -1383,11 +1428,34 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7323, 0.0357764, 12.27)
 shape = SubResource("BoxShape3D_8ip8r")
 
 [node name="AreaPortal" parent="." instance=ExtResource("19_dm4iw")]
-transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 139.263, 0.781345, -0.753388)
+transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 139.751, 0.781345, -0.0656615)
 level_to_load = "res://Scenes/Levels/level_2.tscn"
 
 [node name="Key" parent="." instance=ExtResource("20_ffobn")]
-transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 138.606, 0.778809, -0.720408)
+transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 138.606, 0.778809, 3.0137)
+
+[node name="NPC" parent="." instance=ExtResource("21_dgjpc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.774, 0.401228, -3.28985)
+dialogue_file = "res://Dialogue/npc.dialogue"
+dialog_name = "npc_intro"
+
+[node name="Trees" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.5393, 0.574254, 14.5098)
+
+[node name="tree" parent="Trees" instance=ExtResource("22_n6m7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6148, 0.128039, -3.81253)
+
+[node name="tree4" parent="Trees" instance=ExtResource("22_n6m7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6148, 0.128039, 0.0136337)
+collision_layer = 1
+
+[node name="tree2" parent="Trees" instance=ExtResource("22_n6m7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6064, 0.128039, -3.81253)
+collision_layer = 1
+
+[node name="tree3" parent="Trees" instance=ExtResource("22_n6m7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6064, 0.128039, 1.33627)
+collision_layer = 1
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]

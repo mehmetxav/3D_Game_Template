@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cof7tenj0yfi"]
+
+[ext_resource type="Texture2D" uid="uid://v28griom653g" path="res://UI/download.jpeg" id="1_wvrkj"]
+[ext_resource type="Script" path="res://Scripts/openingdialogue.gd" id="1_y8oqx"]
+
+[node name="Opening" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y8oqx")
+dialog_file = "res://Dialogue/opening.dialogue"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_wvrkj")
