@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=71 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="AudioStream" uid="uid://db1wn8l8c7fgn" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://dk1fnfitwn7yi" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
 [ext_resource type="PackedScene" uid="uid://ymwj4o505hn5" path="res://Scenes/Components/bed_asset.tscn" id="34_gq5vx"]
 [ext_resource type="PackedScene" uid="uid://2rcfrwibogqi" path="res://Scenes/Components/shack.tscn" id="35_apnfa"]
+[ext_resource type="PackedScene" uid="uid://b7dafb4g1c4mw" path="res://Scenes/Components/outdoor_wall_lamp_free.tscn" id="36_x7tfb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x0bb1"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -1410,18 +1411,19 @@ transform = Transform3D(0.0126533, 0, -0.99992, 0, 1, 0, 0.99992, 0, 0.0126533, 
 [node name="Rigidobjects" type="Node3D" parent="."]
 
 [node name="Box" parent="Rigidobjects" instance=ExtResource("12_s8u41")]
+transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 37.7044, 6.23699, 0)
 collision_mask = 139
 
 [node name="Box2" parent="Rigidobjects" instance=ExtResource("12_s8u41")]
-transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 30.6997, 8.23699, 0)
+transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 37.7044, 8.23699, 0)
 collision_mask = 139
 
 [node name="Box3" parent="Rigidobjects" instance=ExtResource("12_s8u41")]
-transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 30.6997, 10.237, 0)
+transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 37.7044, 10.237, 0)
 collision_mask = 139
 
 [node name="Box4" type="RigidBody3D" parent="Rigidobjects"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2958, 11.9403, -0.140193)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.3005, 11.9403, -0.140193)
 collision_layer = 8
 collision_mask = 139
 mass = 0.01
@@ -1452,6 +1454,11 @@ omni_range = 9.12502
 
 [node name="OmniLight3D26" type="OmniLight3D" parent="Lighting for all of the street lamps"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.616, 5.90862, 35.1049)
+light_energy = 16.0
+omni_range = 9.12502
+
+[node name="OmniLight3D28" type="OmniLight3D" parent="Lighting for all of the street lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.9767, 2.69489, 41.9322)
 light_energy = 16.0
 omni_range = 9.12502
 
@@ -1585,14 +1592,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7323, 0.0357764, 12.27)
 shape = SubResource("BoxShape3D_8ip8r")
 
 [node name="AreaPortal" parent="." instance=ExtResource("19_dm4iw")]
-transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 139.751, 0.781345, -0.0656615)
+transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 16.1614, 0.781345, -0.0656615)
 level_to_load = "res://Scenes/Levels/level_2.tscn"
 
 [node name="Key" parent="." instance=ExtResource("20_ffobn")]
-transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 138.606, 0.778809, 3.0137)
+transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 732.231, 0.778809, 3.0137)
 
 [node name="NPC" parent="." instance=ExtResource("21_dgjpc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.774, 0.401228, -3.28985)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.03, 0.401228, -3.28985)
 dialogue_file = "res://Dialogue/npc.dialogue"
 dialog_name = "npc_intro"
 
@@ -1604,15 +1611,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6148, 0.128039, -3.81253)
 
 [node name="tree4" parent="Trees" instance=ExtResource("22_n6m7t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6148, 0.128039, 0.0136337)
-collision_layer = 1
 
 [node name="tree2" parent="Trees" instance=ExtResource("22_n6m7t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6064, 0.128039, -3.81253)
-collision_layer = 1
 
 [node name="tree3" parent="Trees" instance=ExtResource("22_n6m7t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6064, 0.128039, 1.33627)
-collision_layer = 1
+
+[node name="tree5" parent="Trees" instance=ExtResource("22_n6m7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6064, 0.128039, 27.9672)
 
 [node name="Fences" type="Node3D" parent="."]
 transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 16.999, 0.574254, 6.44534)
@@ -1680,10 +1687,13 @@ transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e
 transform = Transform3D(1, -4.02214e-24, 0, -4.02214e-24, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 32.477, 0, 43.7537)
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 32.477, 0.582037, 43.7537)
 
 [node name="shack2" parent="Node3D" instance=ExtResource("35_apnfa")]
 transform = Transform3D(1, -4.02216e-24, 0, -4.02216e-24, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="outdoor_wall_lamp_free" parent="." instance=ExtResource("36_x7tfb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.8666, 2.55174, 41.7495)
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]

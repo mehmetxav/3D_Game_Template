@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7dafb4g1c4mw"]
+
+[ext_resource type="PackedScene" uid="uid://dsu37lubr3rhl" path="res://Models/outdoor_wall_lamp_free.glb" id="1_xbua0"]
+
+[node name="outdoor_wall_lamp_free" instance=ExtResource("1_xbua0")]
