@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ddpo1x4yssh5i"]
 
-[ext_resource type="PackedScene" uid="uid://cf5mker3youbr" path="res://Models/maple_tree.glb" id="1_x6esq"]
+[ext_resource type="PackedScene" uid="uid://p5usna4q0o2" path="res://Models/maple_tree.glb" id="1_x6esq"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_cec5c"]
 height = 3.61854

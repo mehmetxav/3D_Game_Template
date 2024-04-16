@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://bfg6gdyos2hxc"]
+
+[ext_resource type="Script" path="res://Scripts/checkpoint.gd" id="1_0wfxv"]
+[ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="1_w4b2h"]
+[ext_resource type="AudioStream" uid="uid://dppits7gl0c6n" path="res://audio/Blip_select 1.wav" id="3_1qira"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8guif"]
+size = Vector3(2, 0.5, 2)
+
+[sub_resource type="SphereMesh" id="SphereMesh_5827o"]
+
+[sub_resource type="Animation" id="Animation_gk6ik"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.796225, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5k5rl"]
+resource_name = "activated"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(3.48787e-16, 6.28319, 3.48787e-16)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rmfpk"]
+_data = {
+"activated": SubResource("Animation_5k5rl"),
+"idle": SubResource("Animation_gk6ik")
+}
+
+[node name="Checkpoint" type="Area3D"]
+collision_layer = 2048
+script = ExtResource("1_0wfxv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_8guif")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 1.74846e-07, 3.48787e-16, 1, -3.48787e-16, -1.74846e-07, 3.48787e-16, 1, 0, 0, 0)
+material_override = ExtResource("1_w4b2h")
+mesh = SubResource("SphereMesh_5827o")
+skeleton = NodePath("../CollisionShape3D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_rmfpk")
+}
+autoplay = "idle"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_1qira")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

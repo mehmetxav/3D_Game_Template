@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=3 uid="uid://bt8tvxl2t44vr"]
 
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="1_3ll4t"]
-[ext_resource type="Material" uid="uid://cx1i646yip0ur" path="res://Materials/BlueGrid.tres" id="2_8gb12"]
+[ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="2_8gb12"]
 [ext_resource type="PackedScene" uid="uid://dkoap7anasoma" path="res://Scenes/Components/tree.tscn" id="2_jgwqc"]
-[ext_resource type="PackedScene" uid="uid://ywlrbs0vjgkk" path="res://Models/pool.glb" id="4_rh0yb"]
-[ext_resource type="PackedScene" uid="uid://dbou50exiniss" path="res://Models/pigeon.glb" id="5_disa2"]
+[ext_resource type="PackedScene" uid="uid://bdoh373eowlie" path="res://Models/pool.glb" id="4_rh0yb"]
+[ext_resource type="PackedScene" uid="uid://cmhe2i2d1llif" path="res://Models/pigeon.glb" id="5_disa2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uebuw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -142,9 +142,6 @@ transform = Transform3D(0.534824, 0, 4.54191e-09, 0, 0.534824, 0, 5.41324e-09, 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pigeon/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_17hdl")
-
-[node name="Collider" parent="pigeon" index="7"]
-visible = false
 
 [editable path="pool"]
 [editable path="pigeon"]

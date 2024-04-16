@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://2rcfrwibogqi"]
+
+[ext_resource type="PackedScene" uid="uid://cvbrpcnfqeu3n" path="res://Models/garage_metal.glb" id="1_1lx6u"]
+
+[node name="shack" instance=ExtResource("1_1lx6u")]
