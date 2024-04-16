@@ -140,11 +140,11 @@ data = PackedVector3Array(22.8244, 6.1314, 30.1316, 32.8244, 6.1314, 30.1316, 22
 size = Vector3(1.89709, 1.43274, 4.64355)
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_8dx84"]
-vertices = PackedVector3Array(22.5577, 0.917101, 19.4994, 24.8077, 0.917101, 19.4994, 25.0577, 0.917101, 16.7494, 30.8077, 0.917101, 16.7494, 31.0577, 0.917101, 19.4994, 33.5577, 0.917101, 19.7494, 15.3077, 0.917101, 21.7494, 22.3077, 0.917101, 21.7494, 22.5577, 0.917101, 19.4994, 15.3077, 0.917101, 21.7494, 22.5577, 0.917101, 19.4994, 25.0577, 0.917101, 16.7494, 15.3077, 0.917101, -49.2506, 33.5577, 0.917101, 30.4994, 31.3077, 0.917101, 30.7494, 31.3077, 0.917101, 49.7494, 139.808, 0.917101, 49.7494, 33.5577, 0.917101, 19.7494, 33.5577, 0.917101, 30.4994, 139.808, 0.917101, 49.7494, 15.3077, 0.917101, -49.2506, 25.0577, 0.917101, 16.7494, 30.8077, 0.917101, 16.7494, 15.3077, 0.917101, -49.2506, 30.8077, 0.917101, 16.7494, 33.5577, 0.917101, 19.7494, 139.808, 0.917101, 49.7494, 139.808, 0.917101, -49.2506, 25.8077, 3.6671, 17.7494, 25.8077, 3.6671, 19.4994, 30.0577, 3.6671, 19.4994, 30.0577, 3.6671, 17.7494, 27.3077, 0.917101, 20.9994, 26.0577, 0.917101, 21.2494, 26.0577, 0.917101, 21.7494, 29.8077, 0.917101, 21.7494, 29.8077, 0.917101, 21.2494, 28.0577, 0.917101, 20.9994, 27.3077, 0.917101, 19.7494, 27.3077, 0.917101, 20.9994, 28.0577, 0.917101, 20.9994, 28.0577, 0.917101, 19.7494, 28.0577, 0.917101, 19.7494, 29.8077, 0.917101, 19.4994, 29.8077, 0.917101, 17.9994, 26.0577, 0.917101, 17.9994, 26.0577, 0.917101, 19.4994, 27.3077, 0.917101, 19.7494, 23.3077, 6.6671, 20.4994, 23.3077, 6.6671, 29.7494, 32.5577, 6.6671, 29.7494, 32.5577, 6.6671, 20.4994, 31.5577, 0.917101, 21.2494, 31.0577, 0.917101, 21.2494, 30.8077, 0.917101, 22.9994, 31.5577, 0.917101, 28.9994, 25.0577, 0.917101, 22.9994, 24.8077, 0.917101, 21.2494, 23.8077, 0.917101, 21.2494, 23.8077, 0.917101, 28.9994, 31.5577, 0.917101, 28.9994, 30.8077, 0.917101, 22.9994, 25.0577, 0.917101, 22.9994, 23.8077, 0.917101, 28.9994, 25.8077, 3.6671, 21.2494, 25.8077, 3.6671, 21.9994, 30.0577, 3.6671, 21.9994, 30.0577, 3.6671, 21.2494, 15.3077, 0.917101, 28.4994, 22.3077, 0.917101, 28.4994, 22.3077, 0.917101, 21.7494, 15.3077, 0.917101, 21.7494, 22.5577, 0.917101, 30.7494, 22.3077, 0.917101, 28.4994, 15.3077, 0.917101, 28.4994, 15.3077, 0.917101, 49.7494, 31.3077, 0.917101, 49.7494, 31.3077, 0.917101, 30.7494, 22.5577, 0.917101, 30.7494, 15.3077, 0.917101, 49.7494)
-polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Array(8, 7, 6), PackedInt32Array(10, 9, 11), PackedInt32Array(11, 9, 12), PackedInt32Array(14, 13, 15), PackedInt32Array(15, 13, 16), PackedInt32Array(19, 18, 17), PackedInt32Array(22, 21, 20), PackedInt32Array(24, 23, 25), PackedInt32Array(25, 23, 27), PackedInt32Array(25, 27, 26), PackedInt32Array(31, 30, 28), PackedInt32Array(28, 30, 29), PackedInt32Array(33, 32, 34), PackedInt32Array(34, 32, 37), PackedInt32Array(34, 37, 36), PackedInt32Array(34, 36, 35), PackedInt32Array(41, 40, 38), PackedInt32Array(38, 40, 39), PackedInt32Array(47, 46, 42), PackedInt32Array(42, 46, 45), PackedInt32Array(42, 45, 43), PackedInt32Array(43, 45, 44), PackedInt32Array(51, 50, 48), PackedInt32Array(48, 50, 49), PackedInt32Array(53, 52, 54), PackedInt32Array(54, 52, 55), PackedInt32Array(57, 56, 58), PackedInt32Array(58, 56, 59), PackedInt32Array(61, 60, 62), PackedInt32Array(62, 60, 63), PackedInt32Array(67, 66, 64), PackedInt32Array(64, 66, 65), PackedInt32Array(71, 70, 68), PackedInt32Array(68, 70, 69), PackedInt32Array(73, 72, 74), PackedInt32Array(74, 72, 75), PackedInt32Array(77, 76, 78), PackedInt32Array(78, 76, 79)]
+vertices = PackedVector3Array(22.5448, 0.917101, 19.4994, 24.7948, 0.917101, 19.4994, 25.0448, 0.917101, 16.7494, 30.7948, 0.917101, 16.7494, 31.0448, 0.917101, 19.4994, 33.2948, 0.917101, 19.4994, 15.0448, 0.917101, 20.9994, 22.2948, 0.917101, 21.2494, 22.5448, 0.917101, 19.4994, 15.0448, 0.917101, 20.9994, 22.5448, 0.917101, 19.4994, 25.0448, 0.917101, 16.7494, 15.0448, 0.917101, -49.2506, 33.2948, 0.917101, 19.4994, 33.5448, 0.917101, 21.2494, 51.7948, 0.917101, 20.9994, 30.7948, 0.917101, 16.7494, 33.2948, 0.917101, 19.4994, 51.7948, 0.917101, 20.9994, 51.7948, 0.917101, -49.2506, 15.0448, 0.917101, -49.2506, 15.0448, 0.917101, -49.2506, 25.0448, 0.917101, 16.7494, 30.7948, 0.917101, 16.7494, 25.7948, 3.6671, 17.7494, 25.7948, 3.6671, 19.4994, 30.0448, 3.6671, 19.4994, 30.0448, 3.6671, 17.7494, 27.2948, 0.917101, 20.9994, 26.0448, 0.917101, 21.2494, 26.0448, 0.917101, 21.7494, 29.7948, 0.917101, 21.7494, 29.7948, 0.917101, 21.2494, 28.0448, 0.917101, 20.9994, 27.2948, 0.917101, 19.7494, 27.2948, 0.917101, 20.9994, 28.0448, 0.917101, 20.9994, 28.0448, 0.917101, 19.7494, 28.0448, 0.917101, 19.7494, 29.7948, 0.917101, 19.4994, 29.7948, 0.917101, 17.9994, 26.0448, 0.917101, 17.9994, 26.0448, 0.917101, 19.4994, 27.2948, 0.917101, 19.7494, 23.2948, 6.6671, 20.4994, 23.2948, 6.6671, 29.7494, 32.5448, 6.6671, 29.7494, 32.5448, 6.6671, 20.4994, 15.0448, 0.917101, 29.2494, 22.2948, 0.917101, 28.9994, 22.2948, 0.917101, 21.2494, 15.0448, 0.917101, 20.9994, 33.5448, 0.917101, 21.2494, 33.5448, 0.917101, 28.9994, 51.7948, 0.917101, 29.2494, 51.7948, 0.917101, 20.9994, 31.5448, 0.917101, 21.2494, 31.0448, 0.917101, 21.2494, 30.7948, 0.917101, 22.9994, 31.5448, 0.917101, 28.9994, 25.0448, 0.917101, 22.9994, 24.7948, 0.917101, 21.2494, 23.7948, 0.917101, 21.2494, 23.7948, 0.917101, 28.9994, 31.5448, 0.917101, 28.9994, 30.7948, 0.917101, 22.9994, 25.0448, 0.917101, 22.9994, 23.7948, 0.917101, 28.9994, 25.7948, 3.6671, 21.2494, 25.7948, 3.6671, 21.9994, 30.0448, 3.6671, 21.9994, 30.0448, 3.6671, 21.2494, 22.5448, 0.917101, 30.7494, 22.2948, 0.917101, 28.9994, 15.0448, 0.917101, 29.2494, 15.0448, 0.917101, 49.7494, 31.2948, 0.917101, 49.7494, 31.2948, 0.917101, 30.7494, 22.5448, 0.917101, 30.7494, 15.0448, 0.917101, 49.7494, 51.7948, 0.917101, 29.2494, 33.5448, 0.917101, 28.9994, 33.2948, 0.917101, 30.7494, 31.2948, 0.917101, 49.7494, 51.7948, 0.917101, 49.7494, 33.2948, 0.917101, 30.7494, 31.2948, 0.917101, 30.7494, 31.2948, 0.917101, 49.7494)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Array(8, 7, 6), PackedInt32Array(10, 9, 11), PackedInt32Array(11, 9, 12), PackedInt32Array(15, 14, 13), PackedInt32Array(17, 16, 18), PackedInt32Array(18, 16, 19), PackedInt32Array(19, 16, 20), PackedInt32Array(23, 22, 21), PackedInt32Array(27, 26, 24), PackedInt32Array(24, 26, 25), PackedInt32Array(29, 28, 30), PackedInt32Array(30, 28, 33), PackedInt32Array(30, 33, 32), PackedInt32Array(30, 32, 31), PackedInt32Array(37, 36, 34), PackedInt32Array(34, 36, 35), PackedInt32Array(43, 42, 38), PackedInt32Array(38, 42, 41), PackedInt32Array(38, 41, 39), PackedInt32Array(39, 41, 40), PackedInt32Array(47, 46, 44), PackedInt32Array(44, 46, 45), PackedInt32Array(49, 48, 50), PackedInt32Array(50, 48, 51), PackedInt32Array(52, 55, 53), PackedInt32Array(53, 55, 54), PackedInt32Array(57, 56, 58), PackedInt32Array(58, 56, 59), PackedInt32Array(61, 60, 62), PackedInt32Array(62, 60, 63), PackedInt32Array(65, 64, 66), PackedInt32Array(66, 64, 67), PackedInt32Array(71, 70, 68), PackedInt32Array(68, 70, 69), PackedInt32Array(73, 72, 74), PackedInt32Array(74, 72, 75), PackedInt32Array(77, 76, 78), PackedInt32Array(78, 76, 79), PackedInt32Array(81, 80, 82), PackedInt32Array(82, 80, 84), PackedInt32Array(82, 84, 83), PackedInt32Array(87, 86, 85)]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_el3qm"]
-size = Vector2(125.7, 2)
+size = Vector2(37.8, 2)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6kjn5"]
 albedo_color = Color(0, 0, 0, 1)
@@ -153,13 +153,13 @@ albedo_color = Color(0, 0, 0, 1)
 data = PackedVector3Array(62.85, 0, 1, -62.85, 0, 1, 62.85, 0, -1, -62.85, 0, 1, -62.85, 0, -1, 62.85, 0, -1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_v6e3r"]
-size = Vector3(100, 1, 100)
+size = Vector3(30, 1, 100)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_unerv"]
 albedo_color = Color(0.411765, 1, 0.411765, 1)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qpban"]
-data = PackedVector3Array(-50, 0.5, 50, 50, 0.5, 50, -50, -0.5, 50, 50, 0.5, 50, 50, -0.5, 50, -50, -0.5, 50, 50, 0.5, -50, -50, 0.5, -50, 50, -0.5, -50, -50, 0.5, -50, -50, -0.5, -50, 50, -0.5, -50, 50, 0.5, 50, 50, 0.5, -50, 50, -0.5, 50, 50, 0.5, -50, 50, -0.5, -50, 50, -0.5, 50, -50, 0.5, -50, -50, 0.5, 50, -50, -0.5, -50, -50, 0.5, 50, -50, -0.5, 50, -50, -0.5, -50, 50, 0.5, 50, -50, 0.5, 50, 50, 0.5, -50, -50, 0.5, 50, -50, 0.5, -50, 50, 0.5, -50, -50, -0.5, 50, 50, -0.5, 50, -50, -0.5, -50, 50, -0.5, 50, 50, -0.5, -50, -50, -0.5, -50)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_alc7f"]
+data = PackedVector3Array(-15, 0.5, 50, 15, 0.5, 50, -15, -0.5, 50, 15, 0.5, 50, 15, -0.5, 50, -15, -0.5, 50, 15, 0.5, -50, -15, 0.5, -50, 15, -0.5, -50, -15, 0.5, -50, -15, -0.5, -50, 15, -0.5, -50, 15, 0.5, 50, 15, 0.5, -50, 15, -0.5, 50, 15, 0.5, -50, 15, -0.5, -50, 15, -0.5, 50, -15, 0.5, -50, -15, 0.5, 50, -15, -0.5, -50, -15, 0.5, 50, -15, -0.5, 50, -15, -0.5, -50, 15, 0.5, 50, -15, 0.5, 50, 15, 0.5, -50, -15, 0.5, 50, -15, 0.5, -50, 15, 0.5, -50, -15, -0.5, 50, 15, -0.5, 50, -15, -0.5, -50, 15, -0.5, 50, 15, -0.5, -50, -15, -0.5, -50)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_5pudr"]
 size = Vector2(1.5, 0.5)
@@ -284,7 +284,7 @@ transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
 [node name="Light 20" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 15.243, 0.521137, 16.1051)
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 15.3791, 0.593322, 16.1604)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 20"]
 collision_layer = 2
@@ -429,258 +429,6 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
-[node name="Light 4" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 47.734, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 4"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 4/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 4/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 5" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 59.4271, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 5"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 5/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 5/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 6" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 73.01, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 6"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 6/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 6/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 7" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 86.9132, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 7"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 7/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 7/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 8" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 100.289, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 8"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 8/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 8/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 9" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 118.075, 0.525174, 4.81669)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 9"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 9/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 9/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 10" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 118.111, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 10"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 10/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 10/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 18" parent="streetlights/Light 10" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(1, 0, -9.58579e-10, 0, 1, 0, -9.58579e-10, 0, 1, 3.54828, 0, 94.912)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 10/Light 18"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 10/Light 18/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 10/Light 18/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 19" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 129.342, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 19"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 19/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 19/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 23" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 136.537, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 23"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 23/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 23/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 11" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 100.41, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 11"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 11/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 11/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 12" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 86.8885, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 12"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 12/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 12/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 13" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 71.9547, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 13"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 13/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 13/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 14" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 59.1727, 0.549128, -5.66995)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 14"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 14/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 14/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 15" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 47.5074, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 15"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 15/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 15/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 16" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 37.1866, 0.525178, -5.66254)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 16"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 16/StaticBody3D"]
-transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 16/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 18" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 130.117, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 18"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
-transform = Transform3D(1, 0, 1.09299e-08, 0, 1, 0, -1.28757e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="Light 22" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 137.508, 0.525178, 4.76168)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 22"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 22/StaticBody3D"]
-transform = Transform3D(1, 0, 1.09299e-08, 0, 1, 0, -1.28757e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 22/StaticBody3D"]
-transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
-shape = SubResource("CylinderShape3D_hf2qi")
-
 [node name="Thebuilding" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0357113, 0)
 layers = 16
@@ -727,13 +475,15 @@ shape = SubResource("ConcavePolygonShape3D_nvoqo")
 [node name="Door" parent="." instance=ExtResource("16_14qrx")]
 transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.0300326, 27.0256, -2.89221, 23.8313)
 
-[node name="Player" parent="." instance=ExtResource("2_senwc")]
+[node name="Player" parent="." node_paths=PackedStringArray("respawn") instance=ExtResource("2_senwc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4287, 1.63408, 25.2211)
 collision_layer = 2049
 collision_mask = 4098
+respawn = NodePath("../Respawn")
 
-[node name="Checkpoint" parent="." instance=ExtResource("9_pjixv")]
+[node name="Checkpoint" parent="." node_paths=PackedStringArray("player_respawn_position") instance=ExtResource("9_pjixv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.8451, 1.16009, 0.159063)
+player_respawn_position = NodePath("../Respawn")
 
 [node name="InteriorHouse" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0144215, 0, 0)
@@ -786,13 +536,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4059, 0.731549, 9.01119)
 transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 19.9982, 0.548481, 17.6527)
 patrol_locations = [NodePath("../patrol 1/Marker3D"), NodePath("../patrol 1/Marker3D2"), NodePath("../patrol 1/Marker3D3")]
 
+[node name="Respawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1262, 1.57158, 24.4672)
+
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_8dx84")
 
 [node name="Road" type="Node3D" parent="NavigationRegion3D"]
 
 [node name="road" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.49075, 77.7027, 0.584772, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.49075, 33.1948, 0.584773, -0.016201)
 mesh = SubResource("PlaneMesh_el3qm")
 skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_6kjn5")
@@ -804,17 +557,16 @@ collision_layer = 2
 shape = SubResource("ConcavePolygonShape3D_0eunq")
 
 [node name="Ground" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1.25429, 0, 0, 0, 1, 0, 0, 0, 1, 77.5222, 0.0742531, 0.249393)
+transform = Transform3D(1.25429, 0, 0, 0, 1, 0, 0, 0, 1, 33.4562, 0.0742531, 0.249393)
 mesh = SubResource("BoxMesh_v6e3r")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_unerv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Ground"]
 collision_layer = 2
-collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Ground/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_qpban")
+shape = SubResource("ConcavePolygonShape3D_alc7f")
 
 [node name="Road Line2" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2907, 0.593408, 0)
@@ -1008,378 +760,6 @@ collision_layer = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line17/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w44tq")
 
-[node name="Road Line18" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.5963, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line18"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line18/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line19" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.4687, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line19"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line19/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line20" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0332, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line20"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line20/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line21" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.574, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line21"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line21/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line22" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.4878, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line22"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line22/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line23" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.5192, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line23"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line23/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line24" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.5371, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line24"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line24/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line25" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.2207, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line25"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line25/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line26" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.1242, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line26"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line26/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line27" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.5366, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line27"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line27/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line28" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.5211, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line28"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line28/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line29" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.2144, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line29"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line29/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line30" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.9867, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line30"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line30/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line31" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.7898, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line31"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line31/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line32" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.2876, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line32"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line32/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line33" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.1553, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line33"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line33/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line34" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.9762, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line34"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line34/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line35" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.83, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line35"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line35/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line36" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104.711, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line36"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line36/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line37" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.508, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line37"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line37/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line38" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.383, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line38"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line38/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line39" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 113.222, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line39"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line39/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line40" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.55, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line40"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line40/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line41" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.567, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line41"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line41/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line42" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 122.613, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line42"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line42/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line43" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 125.987, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line43"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line43/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line44" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.993, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line44"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line44/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line45" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.828, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line45"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line45/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line46" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 134.7, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line46"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line46/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line47" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.1, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line47"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line47/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
-[node name="Road Line48" type="MeshInstance3D" parent="NavigationRegion3D/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 139.176, 0.593408, 0)
-mesh = SubResource("PlaneMesh_5pudr")
-skeleton = NodePath("../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nfcg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Road/Road Line48"]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Road/Road Line48/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_w44tq")
-
 [node name="Output" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0357113, 0)
 
@@ -1492,91 +872,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2946, 5.42115, 4.54404)
 light_energy = 16.0
 omni_range = 9.12502
 
-[node name="OmniLight3D5" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5243, 5.42115, 4.54404)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5243, 5.42115, -5.65969)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.2236, 5.42115, -5.65969)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.2236, 5.42115, 4.42133)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D9" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8968, 5.42115, 4.42133)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D10" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8968, 5.42115, -5.73639)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D25" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.294, 5.42115, 18.9587)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8605, 5.42115, -5.73639)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D12" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8605, 5.42115, 4.5114)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.171, 5.42115, 4.5114)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D14" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.171, 5.42115, -5.70759)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D15" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.932, 5.42115, -5.70759)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D16" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.932, 5.42115, 4.33425)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D17" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.845, 5.42115, 4.33425)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D24" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.626, 5.41958, 4.33431)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D18" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.839, 5.42115, -6.64976)
-light_energy = 16.0
-omni_range = 9.12502
-
-[node name="OmniLight3D23" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.089, 5.42115, -6.64976)
-light_energy = 16.0
-omni_range = 9.12502
-
 [node name="Pathway from house to the road" type="Node3D" parent="."]
 
 [node name="Area3D" type="Area3D" parent="Pathway from house to the road"]
@@ -1627,6 +922,21 @@ transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-
 [node name="wooden_fence2" parent="Fences" instance=ExtResource("32_r14mf")]
 transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 0, 0, -0.18335)
 
+[node name="wooden_fence33" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 11.4099, 0, -0.131647)
+
+[node name="wooden_fence34" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 11.417, 0, 18.3883)
+
+[node name="wooden_fence35" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 11.417, 0, 14.806)
+
+[node name="wooden_fence36" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 11.417, 0, 3.10194)
+
+[node name="wooden_fence37" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 11.417, 0, 6.72553)
+
 [node name="wooden_fence3" parent="Fences" instance=ExtResource("32_r14mf")]
 transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 0, 0, 3.44737)
 
@@ -1641,6 +951,45 @@ transform = Transform3D(1, 0, 0, 0, 1, 1.12238e-23, 0, 1.12238e-23, 1, 2.86102e-
 
 [node name="wooden_fence7" parent="Fences" instance=ExtResource("32_r14mf")]
 transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -1.82804, 0, 20.2122)
+
+[node name="wooden_fence19" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 13.2464, 0, 20.2122)
+
+[node name="wooden_fence20" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 16.8762, 0, 20.2122)
+
+[node name="wooden_fence21" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 20.5419, 0, 20.2122)
+
+[node name="wooden_fence22" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 24.1856, 0, 20.2122)
+
+[node name="wooden_fence23" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 27.843, 0, 20.2122)
+
+[node name="wooden_fence24" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 31.4414, 0, 20.2122)
+
+[node name="wooden_fence25" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 35.1162, 0, 20.2122)
+
+[node name="wooden_fence26" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 38.7743, 0, 20.2122)
+
+[node name="wooden_fence27" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 42.4085, 0, 20.2122)
+
+[node name="wooden_fence28" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48788e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 45.9735, 0, 20.2122)
+
+[node name="wooden_fence29" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48788e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 49.5885, 0, 20.2122)
+
+[node name="wooden_fence30" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48788e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 53.5725, 0, 20.2122)
+
+[node name="wooden_fence31" parent="Fences" instance=ExtResource("32_r14mf")]
+transform = Transform3D(-4.37114e-08, 3.48788e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 54.1628, 0, 20.2122)
 
 [node name="wooden_fence8" parent="Fences" instance=ExtResource("32_r14mf")]
 transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -5.47261, 0, 20.2122)
@@ -1686,16 +1035,17 @@ transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e
 [node name="bed_asset" parent="Bed" instance=ExtResource("34_gq5vx")]
 transform = Transform3D(1, -4.02214e-24, 0, -4.02214e-24, 1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Node3D" type="Node3D" parent="."]
+[node name="Shack lamp" type="Node3D" parent="."]
 transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 32.477, 0.582037, 43.7537)
 
-[node name="shack2" parent="Node3D" instance=ExtResource("35_apnfa")]
+[node name="shack2" parent="Shack lamp" instance=ExtResource("35_apnfa")]
 transform = Transform3D(1, -4.02216e-24, 0, -4.02216e-24, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="outdoor_wall_lamp_free" parent="." instance=ExtResource("36_x7tfb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.8666, 2.55174, 41.7495)
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
+[connection signal="reached_player" from="Enemy/Enemy" to="Player" method="_on_enemy_reached_player"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase2" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase3" to="UI/HUD" method="_on_moneycase_item_collected"]

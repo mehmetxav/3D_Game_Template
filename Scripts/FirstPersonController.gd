@@ -8,6 +8,7 @@ class_name Player extends CharacterBody3D
 @export_range(10, 400, 1) var acceleration: float = 100 # m/s^2
 @export_range(0.1, 3.0, 0.1) var jump_height: float = 1 # m
 @export_range(0.1, 3.0, 0.1, "or_greater") var camera_sens: float = 1
+@export var respawn : Node3D
 
 var jumping: bool = false
 var mouse_captured: bool = false
@@ -95,3 +96,8 @@ func play_footstep_sound(walk_vel):
 			$footstep.play()
 			footstep_timer.wait_time = randf_range(0.25, 0.35)
 			footstep_timer.start()
+
+
+func _on_enemy_reached_player():
+	position = respawn.position
+	

@@ -4,6 +4,7 @@ extends CharacterBody3D
 @export var speed = 3 
 @export var patrol_locations : Array[Marker3D]
 @export_file var game_over_scene
+signal reached_player 
 
 var patrol_index : int = 0
 var wait_frame : bool = true
@@ -32,9 +33,9 @@ func _physics_process(delta):
 		
 	
 	if nav_agent.distance_to_target() < 2 and is_following_player:
-		global.apple_count = 0
-		global.has_special_key = false
-		get_tree().change_scene_to_file(game_over_scene)
+		#global.apple_count = 0 
+		#global.has_special_key = false
+		emit_signal("reached_player")
 		return
 
 	var current_location = global_transform.origin

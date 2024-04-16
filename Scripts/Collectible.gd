@@ -13,7 +13,8 @@ func _on_body_entered(body):
 	if type == "special_key":
 		global.has_special_key = true
 	
-	body.play_pickup_sound()
+	
+	#body.play_pickup_sound()
 	emit_signal("item_collected")
 	queue_free() # remove object from scene((
 
