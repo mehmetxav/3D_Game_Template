@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=78 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="AudioStream" uid="uid://ckgqdxh64tlco" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
@@ -236,11 +236,26 @@ normal_texture = ExtResource("33_i7g8y")
 heightmap_enabled = true
 heightmap_texture = ExtResource("8_ic25g")
 
-[sub_resource type="BoxMesh" id="BoxMesh_u06ut"]
+[sub_resource type="BoxMesh" id="BoxMesh_um2vg"]
 size = Vector3(10, 0.1, 10)
 
-[sub_resource type="BoxMesh" id="BoxMesh_6c0yt"]
+[sub_resource type="BoxMesh" id="BoxMesh_5w5x4"]
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k38ub"]
 size = Vector3(6, 0.1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0kf66"]
+size = Vector3(6, 0.1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_efkjh"]
+size = Vector3(6, 0.1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8hp82"]
+size = Vector3(6, 0.1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ak0r6"]
+size = Vector3(0.5, 6, 10)
 
 [node name="MainLevel" type="Node3D"]
 
@@ -1052,29 +1067,51 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.8666, 2.55174, 41.7495)
 
 [node name="Second house" type="Node3D" parent="."]
 
-[node name="Area3D" type="Area3D" parent="Second house"]
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Second house"]
+
+[node name="Floor" type="CSGMesh3D" parent="Second house/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4876, 0.526338, -20.3064)
+mesh = SubResource("BoxMesh_um2vg")
+
+[node name="Floor2" type="CSGMesh3D" parent="Second house/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6008, 6.32007, -20.3167)
+mesh = SubResource("BoxMesh_5w5x4")
+
+[node name="left wall" type="CSGMesh3D" parent="Second house/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 22.5543, 3.37195, -20.3127)
+mesh = SubResource("BoxMesh_k38ub")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Second house/CSGCombiner3D/left wall"]
+operation = 2
+size = Vector3(2, 1, 3)
+
+[node name="right wall" type="CSGMesh3D" parent="Second house/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 32.5099, 3.38127, -20.313)
+mesh = SubResource("BoxMesh_0kf66")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Second house/CSGCombiner3D/right wall"]
+operation = 2
+size = Vector3(2, 1, 3)
+
+[node name="back wall" type="CSGMesh3D" parent="Second house/CSGCombiner3D"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 27.5543, 3.37195, -25.2098)
+mesh = SubResource("BoxMesh_efkjh")
+
+[node name="front wall" type="CSGMesh3D" parent="Second house/CSGCombiner3D"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 27.5816, 3.37195, -15.3629)
+mesh = SubResource("BoxMesh_8hp82")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Second house/CSGCombiner3D/front wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.32087, 0, 0)
+operation = 2
+size = Vector3(3, 1, 2)
+
+[node name="Area3D" type="StaticBody3D" parent="Second house"]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Second house/Area3D"]
-
-[node name="Floor" type="MeshInstance3D" parent="Second house"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4876, 0.526338, -20.3064)
-mesh = SubResource("BoxMesh_u06ut")
-
-[node name="Floor2" type="MeshInstance3D" parent="Second house"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4876, 6.37444, -20.3064)
-mesh = SubResource("BoxMesh_u06ut")
-
-[node name="left wall" type="MeshInstance3D" parent="Second house"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 22.5543, 3.37195, -20.3127)
-mesh = SubResource("BoxMesh_6c0yt")
-
-[node name="right wall" type="MeshInstance3D" parent="Second house"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 32.5543, 3.37195, -20.3127)
-mesh = SubResource("BoxMesh_6c0yt")
-
-[node name="back wall" type="MeshInstance3D" parent="Second house"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 27.5543, 3.37195, -25.2098)
-mesh = SubResource("BoxMesh_6c0yt")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.7172, 3.2803, -20.3777)
+shape = SubResource("BoxShape3D_ak0r6")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Second house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1524, 4.25268, -20.2082)
@@ -1082,6 +1119,10 @@ omni_range = 33.47
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Second house"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4528, 4.25268, -20.2082)
+omni_range = 33.47
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Second house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7875, 4.25268, -20.2082)
 omni_range = 33.47
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
