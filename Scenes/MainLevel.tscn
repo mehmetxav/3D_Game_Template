@@ -1,38 +1,38 @@
-[gd_scene load_steps=71 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=73 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="AudioStream" uid="uid://db1wn8l8c7fgn" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="AudioStream" uid="uid://ckgqdxh64tlco" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
-[ext_resource type="PackedScene" uid="uid://g7rebehj8n55" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://clvuar3qo6p7k" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
-[ext_resource type="AudioStream" uid="uid://yrx0kuuit7ym" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
-[ext_resource type="PackedScene" uid="uid://dwrx57jl8nqmd" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://bcqstdv5f7c0h" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://ctacj4rqanl44" path="res://Models/centre_table.glb" id="6_c6vpx"]
-[ext_resource type="Texture2D" uid="uid://4yjrqexg8eyj" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="7_ogwkc"]
-[ext_resource type="Texture2D" uid="uid://vswynimxrkrn" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Color.png" id="7_ohlyt"]
+[ext_resource type="AudioStream" uid="uid://c0mplpfrxn2x" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
+[ext_resource type="PackedScene" uid="uid://deo0pscyg1d4a" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://dxlc2baajvyvq" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://bv6pt3ugohj5p" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="Texture2D" uid="uid://s4n573ei3htb" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="7_ogwkc"]
+[ext_resource type="Texture2D" uid="uid://2mtl6kifocj3" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Color.png" id="7_ohlyt"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://b1fr2twpef6ee" path="res://Models/floor_carpet.glb" id="8_0hebu"]
-[ext_resource type="Texture2D" uid="uid://c3jyd4ju0gljq" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Displacement.png" id="8_gtbaa"]
-[ext_resource type="Texture2D" uid="uid://b0nc4ca3ghiku" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Displacement.png" id="8_ic25g"]
-[ext_resource type="Texture2D" uid="uid://cyjcgcwkaex2f" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalDX.png" id="9_eoyug"]
+[ext_resource type="PackedScene" uid="uid://cvnsaixwyonty" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="Texture2D" uid="uid://cunr5yfwku8bt" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Displacement.png" id="8_gtbaa"]
+[ext_resource type="Texture2D" uid="uid://c0w58uyfdl8gu" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Displacement.png" id="8_ic25g"]
+[ext_resource type="Texture2D" uid="uid://sav63cbprmax" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalDX.png" id="9_eoyug"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
 [ext_resource type="PackedScene" uid="uid://bfg6gdyos2hxc" path="res://Scenes/Components/checkpoint.tscn" id="9_pjixv"]
-[ext_resource type="Texture2D" uid="uid://cgwltcy4asr42" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalDX.png" id="9_u7jl1"]
-[ext_resource type="Texture2D" uid="uid://cpvvddrhiv8bo" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
-[ext_resource type="Texture2D" uid="uid://dlx7dmsvq3ctq" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
-[ext_resource type="PackedScene" uid="uid://basrtbdqv1u0o" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="Texture2D" uid="uid://duvdd3fh3flk4" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalDX.png" id="9_u7jl1"]
+[ext_resource type="Texture2D" uid="uid://8dxgvku0ypb4" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
+[ext_resource type="Texture2D" uid="uid://dmqc00qh6s1n" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
+[ext_resource type="PackedScene" uid="uid://co47qrhm5hh1o" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
 [ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
 [ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
-[ext_resource type="PackedScene" uid="uid://b7n8khojesta1" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="PackedScene" uid="uid://c2b6h6h0bx538" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 [ext_resource type="PackedScene" uid="uid://74xvu3f3ry78" path="res://Scenes/Components/area_portal.tscn" id="19_dm4iw"]
 [ext_resource type="PackedScene" uid="uid://u2yadxjmjjlb" path="res://Scenes/special_key.tscn" id="20_ffobn"]
 [ext_resource type="PackedScene" uid="uid://ioxvc3f54u1t" path="res://Scenes/npc.tscn" id="21_dgjpc"]
 [ext_resource type="PackedScene" uid="uid://ddpo1x4yssh5i" path="res://Component/tree.tscn" id="22_n6m7t"]
 [ext_resource type="PackedScene" uid="uid://by4yeprkmb0a" path="res://Scenes/Components/wooden_fence.tscn" id="32_r14mf"]
-[ext_resource type="Texture2D" uid="uid://dk1fnfitwn7yi" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
+[ext_resource type="Texture2D" uid="uid://bwu0dp76jlt1d" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
 [ext_resource type="PackedScene" uid="uid://ymwj4o505hn5" path="res://Scenes/Components/bed_asset.tscn" id="34_gq5vx"]
 [ext_resource type="PackedScene" uid="uid://2rcfrwibogqi" path="res://Scenes/Components/shack.tscn" id="35_apnfa"]
 [ext_resource type="PackedScene" uid="uid://b7dafb4g1c4mw" path="res://Scenes/Components/outdoor_wall_lamp_free.tscn" id="36_x7tfb"]
@@ -235,6 +235,12 @@ normal_enabled = true
 normal_texture = ExtResource("33_i7g8y")
 heightmap_enabled = true
 heightmap_texture = ExtResource("8_ic25g")
+
+[sub_resource type="BoxMesh" id="BoxMesh_u06ut"]
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6c0yt"]
+size = Vector3(6, 0.1, 10)
 
 [node name="MainLevel" type="Node3D"]
 
@@ -524,7 +530,7 @@ script = ExtResource("9_mkh4i")
 [node name="patrol 1" type="Node" parent="Enemy"]
 
 [node name="Marker3D" type="Marker3D" parent="Enemy/patrol 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2668, 0.731549, 1.35734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9613, 0.731549, 9.03796)
 
 [node name="Marker3D2" type="Marker3D" parent="Enemy/patrol 1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2668, 0.731549, 9.01119)
@@ -786,7 +792,7 @@ transform = Transform3D(-0.99997, 0, 0.00776657, 0, 1, 0, -0.00776657, 0, -0.999
 transform = Transform3D(-0.994665, 0, 0.103157, 0, 1, 0, -0.103157, 0, -0.994665, 28.333, 0.70977, 1.91202)
 
 [node name="Moneycase3" parent="Collectibles" instance=ExtResource("7_rcf5u")]
-transform = Transform3D(0.0126533, 0, -0.99992, 0, 1, 0, 0.99992, 0, 0.0126533, 28.6741, 0.796387, 18.1165)
+transform = Transform3D(0.0241879, 0, 0.999707, 0, 1, 0, -0.999707, 0, 0.0241879, 31.7344, 0.796387, 46.5184)
 
 [node name="Rigidobjects" type="Node3D" parent="."]
 
@@ -1043,6 +1049,40 @@ transform = Transform3D(1, -4.02216e-24, 0, -4.02216e-24, 1, 0, 0, 0, 1, 0, 0, 0
 
 [node name="outdoor_wall_lamp_free" parent="." instance=ExtResource("36_x7tfb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.8666, 2.55174, 41.7495)
+
+[node name="Second house" type="Node3D" parent="."]
+
+[node name="Area3D" type="Area3D" parent="Second house"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Second house/Area3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="Second house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4876, 0.526338, -20.3064)
+mesh = SubResource("BoxMesh_u06ut")
+
+[node name="Floor2" type="MeshInstance3D" parent="Second house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4876, 6.37444, -20.3064)
+mesh = SubResource("BoxMesh_u06ut")
+
+[node name="left wall" type="MeshInstance3D" parent="Second house"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 22.5543, 3.37195, -20.3127)
+mesh = SubResource("BoxMesh_6c0yt")
+
+[node name="right wall" type="MeshInstance3D" parent="Second house"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 32.5543, 3.37195, -20.3127)
+mesh = SubResource("BoxMesh_6c0yt")
+
+[node name="back wall" type="MeshInstance3D" parent="Second house"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 27.5543, 3.37195, -25.2098)
+mesh = SubResource("BoxMesh_6c0yt")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Second house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1524, 4.25268, -20.2082)
+omni_range = 33.47
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Second house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4528, 4.25268, -20.2082)
+omni_range = 33.47
 
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="reached_player" from="Enemy/Enemy" to="Player" method="_on_enemy_reached_player"]
