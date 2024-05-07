@@ -1132,6 +1132,10 @@ omni_range = 33.47
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7875, 4.25268, -20.2082)
 omni_range = 33.47
 
+[node name="OmniLight3D5" type="OmniLight3D" parent="Second house"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6362, 3.5624, 18.8678)
+omni_range = 33.47
+
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="reached_player" from="Enemy/Enemy" to="Player" method="_on_enemy_reached_player"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
