@@ -10,7 +10,7 @@
 radius = 0.515478
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7mh0a"]
-size = Vector3(9.03813, 1.6643, 9.1247)
+size = Vector3(6.99977, 1.6643, 5.11076)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oih5o"]
 size = Vector3(1, 1.7741, 1)
@@ -2137,7 +2137,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.57887)
 collision_layer = 64
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="playerdetectarea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33462, 1.10264, -0.0461845)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302958, 1.10264, 1.96078)
 shape = SubResource("BoxShape3D_7mh0a")
 
 [node name="DetectSound" type="AudioStreamPlayer3D" parent="."]

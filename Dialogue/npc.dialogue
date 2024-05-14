@@ -1,28 +1,28 @@
 ~ npc_intro
 
-Jerry: [[Hi|Hello|Howdy]], My name is Jerry.
+Archress: [[Hi|Hello|Howdy]], My name is Archress.
 Mehmet: Hi. 
-Jerry: How's it going?
+Archress: How's it going?
 - It's bad
-	Mehmet: It's bad.
+	Mehmet: It's bad i am being chased by monsters.
 	=> END
 - It's good!
-	Mehmet: It's good!
+	Mehmet: It's good i am currently collecting money cases!
 	=> collect_key
 
 => END
 
 ~ collect_key
-Jerry: I have a key to the portal. You can exchange 3 money cases for the key.
+Archress: I have a key to the portal. You can exchange 3 money cases for the key.
 - Exchange money cases.
 	if global.apple_count >= 3:
-		Jerry: Great, here is the key!
+		Archress: Great, here is the key!
 		set global.has_special_key = true
 		=> END
 	else:
-		Jerry: You don't have enough money cases!
+		Jerry: You don't have enough money cases for the key!
 		=> END
 - Keep money cases.
-	Jerry: Okay, goodbye!
+	Archress: Okay, goodluck!
 	=> END
 => END
