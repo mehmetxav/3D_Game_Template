@@ -451,6 +451,34 @@ shape = SubResource("CylinderShape3D_hf2qi")
 transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
+[node name="Light 18" parent="streetlights" instance=ExtResource("1_w8yd5")]
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 23.3565, 0.525178, -5.33734)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 18"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
+transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 18/StaticBody3D"]
+transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="Light 19" parent="streetlights" instance=ExtResource("1_w8yd5")]
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 38.3038, 0.525178, -5.33734)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 19"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="streetlights/Light 19/StaticBody3D"]
+transform = Transform3D(1, 0, 1.05231e-08, 0, 1, 0, -1.05231e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="streetlights/Light 19/StaticBody3D"]
+transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_hf2qi")
+
 [node name="Light 3" parent="streetlights" instance=ExtResource("1_w8yd5")]
 transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 37.3795, 0.525178, 4.76168)
 
