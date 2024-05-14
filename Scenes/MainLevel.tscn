@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=83 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="AudioStream" uid="uid://b61xwbbvoleqb" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
@@ -259,6 +259,15 @@ size = Vector3(0.5, 6, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r6ts3"]
 size = Vector3(1, 7.9718, 98.9158)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xytcu"]
+size = Vector3(0.705811, 4.05847, 98.9545)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dnfng"]
+size = Vector3(22.4525, 7.22943, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8j0xd"]
+size = Vector3(23.6753, 4.62805, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7ln4b"]
 size = Vector3(1, 1, 4.51239)
@@ -1170,12 +1179,38 @@ omni_range = 33.47
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6362, 3.5624, 18.8678)
 omni_range = 33.47
 
-[node name="Barrier" type="StaticBody3D" parent="."]
+[node name="World Barries" type="Node3D" parent="."]
+
+[node name="Barrier" type="StaticBody3D" parent="World Barries"]
 collision_layer = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Barrier"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World Barries/Barrier"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.8905, 4.60892, 0.595337)
 shape = SubResource("BoxShape3D_r6ts3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World Barries"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4013, 0, 0)
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World Barries/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27291, 2.72508, 0.373238)
+shape = SubResource("BoxShape3D_xytcu")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="World Barries"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9466, 1.69277, -49.6567)
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World Barries/StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.755066, 2.66987, 0.477177)
+shape = SubResource("BoxShape3D_dnfng")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="World Barries"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.6241, 1.07891, 49.7596)
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World Barries/StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.87964, 1.81403, 0)
+shape = SubResource("BoxShape3D_8j0xd")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 collision_layer = 2
