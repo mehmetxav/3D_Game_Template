@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bqo38pgp0avxr" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="4_7uk1v"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_80jnb"]
-size = Vector3(4.93292, 4.87155, 0.913269)
+size = Vector3(4.93292, 4.87155, 1.21465)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_or71s"]
 resource_name = "Stone_Portal_1"
@@ -59,7 +59,7 @@ collision_layer = 256
 script = ExtResource("1_ib0q6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019989, 0.0196226, -0.0138855)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019989, 0.0196226, 0.00261687)
 shape = SubResource("BoxShape3D_80jnb")
 
 [node name="StonePortal1" type="MeshInstance3D" parent="."]
