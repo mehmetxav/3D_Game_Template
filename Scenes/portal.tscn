@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://db87m8fkv2q8t"]
+
+[ext_resource type="PackedScene" uid="uid://cakbtpq5deut1" path="res://Models/portal.glb" id="1_1xk5k"]
+[ext_resource type="Texture2D" uid="uid://7vd68mlmmbtv" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="2_ra04p"]
+[ext_resource type="Texture2D" uid="uid://c3jd6ctt6g1p" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalGL.png" id="3_jbcwt"]
+[ext_resource type="Texture2D" uid="uid://bqo38pgp0avxr" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="4_p6k23"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibcqn"]
+albedo_texture = ExtResource("2_ra04p")
+roughness_texture = ExtResource("4_p6k23")
+normal_enabled = true
+normal_texture = ExtResource("3_jbcwt")
+
+[node name="portal" instance=ExtResource("1_1xk5k")]
+
+[node name="StonePortal1" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, 0, 1, -3.57628e-07, 3.64003, 3.51695, 1.74014)
+surface_material_override/0 = SubResource("StandardMaterial3D_ibcqn")
