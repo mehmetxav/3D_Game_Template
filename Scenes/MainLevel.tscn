@@ -1,38 +1,38 @@
-[gd_scene load_steps=78 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=79 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="AudioStream" uid="uid://ckgqdxh64tlco" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="AudioStream" uid="uid://b61xwbbvoleqb" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
-[ext_resource type="PackedScene" uid="uid://clvuar3qo6p7k" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://bbql4qtitfp6b" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
-[ext_resource type="AudioStream" uid="uid://c0mplpfrxn2x" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
-[ext_resource type="PackedScene" uid="uid://deo0pscyg1d4a" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://dxlc2baajvyvq" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://bv6pt3ugohj5p" path="res://Models/centre_table.glb" id="6_c6vpx"]
-[ext_resource type="Texture2D" uid="uid://s4n573ei3htb" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="7_ogwkc"]
-[ext_resource type="Texture2D" uid="uid://2mtl6kifocj3" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Color.png" id="7_ohlyt"]
+[ext_resource type="AudioStream" uid="uid://ctwd343ytbtk1" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
+[ext_resource type="PackedScene" uid="uid://b7upq0gm5x0e5" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://kljhy2pi4twe" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://cn0x0wk3lcman" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="Texture2D" uid="uid://7vd68mlmmbtv" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="7_ogwkc"]
+[ext_resource type="Texture2D" uid="uid://bqxcy5uhdx84k" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Color.png" id="7_ohlyt"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://cvnsaixwyonty" path="res://Models/floor_carpet.glb" id="8_0hebu"]
-[ext_resource type="Texture2D" uid="uid://cunr5yfwku8bt" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Displacement.png" id="8_gtbaa"]
-[ext_resource type="Texture2D" uid="uid://c0w58uyfdl8gu" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Displacement.png" id="8_ic25g"]
-[ext_resource type="Texture2D" uid="uid://sav63cbprmax" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalDX.png" id="9_eoyug"]
+[ext_resource type="PackedScene" uid="uid://duntdps7c01lq" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="Texture2D" uid="uid://5xpx3o4kgi81" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Displacement.png" id="8_gtbaa"]
+[ext_resource type="Texture2D" uid="uid://bdkbfsa38wqs7" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Displacement.png" id="8_ic25g"]
+[ext_resource type="Texture2D" uid="uid://mcivm4slx6jb" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalDX.png" id="9_eoyug"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
 [ext_resource type="PackedScene" uid="uid://bfg6gdyos2hxc" path="res://Scenes/Components/checkpoint.tscn" id="9_pjixv"]
-[ext_resource type="Texture2D" uid="uid://duvdd3fh3flk4" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalDX.png" id="9_u7jl1"]
-[ext_resource type="Texture2D" uid="uid://8dxgvku0ypb4" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
-[ext_resource type="Texture2D" uid="uid://dmqc00qh6s1n" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
-[ext_resource type="PackedScene" uid="uid://co47qrhm5hh1o" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="Texture2D" uid="uid://dprbyg3y7iq7f" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalDX.png" id="9_u7jl1"]
+[ext_resource type="Texture2D" uid="uid://bqo38pgp0avxr" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
+[ext_resource type="Texture2D" uid="uid://cwvf6ap6nibon" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
+[ext_resource type="PackedScene" uid="uid://pdlqlil58lle" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
 [ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
 [ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
-[ext_resource type="PackedScene" uid="uid://c2b6h6h0bx538" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="PackedScene" uid="uid://cnkx7ioyhp4ae" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 [ext_resource type="PackedScene" uid="uid://74xvu3f3ry78" path="res://Scenes/Components/area_portal.tscn" id="19_dm4iw"]
 [ext_resource type="PackedScene" uid="uid://u2yadxjmjjlb" path="res://Scenes/special_key.tscn" id="20_ffobn"]
 [ext_resource type="PackedScene" uid="uid://ioxvc3f54u1t" path="res://Scenes/npc.tscn" id="21_dgjpc"]
 [ext_resource type="PackedScene" uid="uid://ddpo1x4yssh5i" path="res://Component/tree.tscn" id="22_n6m7t"]
 [ext_resource type="PackedScene" uid="uid://by4yeprkmb0a" path="res://Scenes/Components/wooden_fence.tscn" id="32_r14mf"]
-[ext_resource type="Texture2D" uid="uid://bwu0dp76jlt1d" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
+[ext_resource type="Texture2D" uid="uid://bl2k1ol7rojwd" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
 [ext_resource type="PackedScene" uid="uid://ymwj4o505hn5" path="res://Scenes/Components/bed_asset.tscn" id="34_gq5vx"]
 [ext_resource type="PackedScene" uid="uid://2rcfrwibogqi" path="res://Scenes/Components/shack.tscn" id="35_apnfa"]
 [ext_resource type="PackedScene" uid="uid://b7dafb4g1c4mw" path="res://Scenes/Components/outdoor_wall_lamp_free.tscn" id="36_x7tfb"]
@@ -256,6 +256,9 @@ size = Vector3(6, 0.1, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ak0r6"]
 size = Vector3(0.5, 6, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r6ts3"]
+size = Vector3(1, 7.9718, 98.9158)
 
 [node name="MainLevel" type="Node3D"]
 
@@ -500,6 +503,7 @@ transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.03003
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4287, 1.63408, 25.2211)
 collision_layer = 2049
 collision_mask = 4098
+speed = 6.0
 respawn = NodePath("../Respawn")
 
 [node name="Checkpoint" parent="." node_paths=PackedStringArray("player_respawn_position") instance=ExtResource("9_pjixv")]
@@ -545,16 +549,44 @@ script = ExtResource("9_mkh4i")
 [node name="patrol 1" type="Node" parent="Enemy"]
 
 [node name="Marker3D" type="Marker3D" parent="Enemy/patrol 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9613, 0.731549, 9.03796)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4642, 0.731549, 9.03796)
 
 [node name="Marker3D2" type="Marker3D" parent="Enemy/patrol 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2668, 0.731549, 9.01119)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2235, 0.731549, 9.01119)
 
 [node name="Marker3D3" type="Marker3D" parent="Enemy/patrol 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4059, 0.731549, 9.01119)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.0611, 0.731549, 9.01119)
+
+[node name="Marker3D4" type="Marker3D" parent="Enemy/patrol 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.0611, 0.731549, 13.3498)
+
+[node name="Marker3D5" type="Marker3D" parent="Enemy/patrol 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.3753, 0.731549, 13.3498)
 
 [node name="Enemy" parent="Enemy" node_paths=PackedStringArray("patrol_locations") instance=ExtResource("9_imeyv")]
 transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 19.9982, 0.548481, 17.6527)
+speed = 5
+patrol_locations = [NodePath("../patrol 1/Marker3D"), NodePath("../patrol 1/Marker3D2"), NodePath("../patrol 1/Marker3D3"), NodePath("../patrol 1/Marker3D4"), NodePath("../patrol 1/Marker3D5")]
+
+[node name="Enemy2" type="Node3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -31.1935)
+script = ExtResource("9_mkh4i")
+
+[node name="patrol 1" type="Node" parent="Enemy2"]
+
+[node name="Marker3D" type="Marker3D" parent="Enemy2/patrol 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6642, 0, -7.62528)
+
+[node name="Marker3D2" type="Marker3D" parent="Enemy2/patrol 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.8358, 0, -7.62528)
+
+[node name="Marker3D3" type="Marker3D" parent="Enemy2/patrol 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.2125, 0, -7.62528)
+
+[node name="Enemy" parent="Enemy2" node_paths=PackedStringArray("patrol_locations") instance=ExtResource("9_imeyv")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 19.9982, 0.548481, 17.6527)
+speed = 5
 patrol_locations = [NodePath("../patrol 1/Marker3D"), NodePath("../patrol 1/Marker3D2"), NodePath("../patrol 1/Marker3D3")]
 
 [node name="Respawn" type="Node3D" parent="."]
@@ -1136,8 +1168,16 @@ omni_range = 33.47
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6362, 3.5624, 18.8678)
 omni_range = 33.47
 
+[node name="Barrier" type="StaticBody3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barrier"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.8905, 4.60892, 0.595337)
+shape = SubResource("BoxShape3D_r6ts3")
+
 [connection signal="update_console" from="Player/Camera/pickuparea" to="UI/HUD" method="_on_pickuparea_update_console"]
 [connection signal="reached_player" from="Enemy/Enemy" to="Player" method="_on_enemy_reached_player"]
+[connection signal="reached_player" from="Enemy2/Enemy" to="Player" method="_on_enemy_reached_player"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase2" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase3" to="UI/HUD" method="_on_moneycase_item_collected"]

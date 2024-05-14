@@ -53,15 +53,19 @@ func update_target_location(target_location):
 
 
 func _on_playerdetectarea_body_entered(body):
+	if $"detect cooldown".time_left > 0:
+		return
 	is_following_player = true
 	$enemy/AnimationPlayer.play("Run")
 	$DetectSound.play()
+	
 	
 
 func _on_playerdetectarea_body_exited(body):
 	is_following_player = false
 	$enemy/AnimationPlayer.play("Walk_001")
 	set_patrol_location()
+	$"detect cooldown".start()
 
 func _on_hitbox_body_entered(body):
 	queue_free()

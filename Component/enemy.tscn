@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://epmelqjhdi3h"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_vy8ev"]
-[ext_resource type="AudioStream" uid="uid://dsgsybc43601c" path="res://audio/555412__tonsil5__zombie-death-1.wav" id="3_uuj37"]
-[ext_resource type="PackedScene" uid="uid://d3wt6jdqd11v4" path="res://Models/enemy.glb" id="3_xm8i3"]
+[ext_resource type="AudioStream" uid="uid://chmqh0w1f23q1" path="res://audio/555412__tonsil5__zombie-death-1.wav" id="3_uuj37"]
+[ext_resource type="PackedScene" uid="uid://dc4ln8snlvu7a" path="res://Models/enemy.glb" id="3_xm8i3"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_ucvxg"]
 
@@ -10,7 +10,7 @@
 radius = 0.515478
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7mh0a"]
-size = Vector3(1, 1.6643, 5.33527)
+size = Vector3(9.03813, 1.6643, 9.1247)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oih5o"]
 size = Vector3(1, 1.7741, 1)
@@ -2115,9 +2115,10 @@ _data = {
 "Walk_001": SubResource("Animation_de3uy")
 }
 
-[node name="Enemy" type="CharacterBody3D" groups=["enemies"]]
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("patrol_locations") groups=["enemies"]]
 collision_layer = 32
 script = ExtResource("1_vy8ev")
+patrol_locations = [null]
 game_over_scene = "res://UI/game_over.tscn"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -2136,7 +2137,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.57887)
 collision_layer = 64
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="playerdetectarea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00546026, 1.10264, 1.84853)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33462, 1.10264, -0.0461845)
 shape = SubResource("BoxShape3D_7mh0a")
 
 [node name="DetectSound" type="AudioStreamPlayer3D" parent="."]
@@ -2264,6 +2265,10 @@ libraries = {
 }
 autoplay = "Walk_001"
 playback_default_blend_time = 0.4
+
+[node name="detect cooldown" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
 
 [connection signal="body_entered" from="playerdetectarea" to="." method="_on_playerdetectarea_body_entered"]
 [connection signal="body_exited" from="playerdetectarea" to="." method="_on_playerdetectarea_body_exited"]
