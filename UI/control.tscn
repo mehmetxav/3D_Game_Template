@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dyahk1o0s120i"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_aue31"]
-[ext_resource type="Texture2D" uid="uid://c2yheffgsylvh" path="res://UI/VIDEOGAMEMENU.jpg" id="2_54e8q"]
+[ext_resource type="Texture2D" uid="uid://cd74lxpxwe8sg" path="res://Component/VIDEOGAMEMENU.jpg" id="2_0pv3x"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,7 +22,7 @@ offset_left = -2.0
 offset_top = 1.0
 offset_right = -9.0
 offset_bottom = -3.0
-texture = ExtResource("2_54e8q")
+texture = ExtResource("2_0pv3x")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
