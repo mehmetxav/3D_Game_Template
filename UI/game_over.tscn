@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c1yojnrhar74k"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_rn622"]
-[ext_resource type="Texture2D" uid="uid://c0rvfgal6wf7t" path="res://UI/download.jpeg" id="3_2mprr"]
+[ext_resource type="Texture2D" uid="uid://cei3y2kj88yjb" path="res://Component/df36fd30ba7ba40d2ffc1c5d4fd2337f.jpg" id="2_6ukkt"]
 
 [node name="game_over" type="Control"]
 layout_mode = 3
@@ -22,7 +22,7 @@ offset_left = -2.0
 offset_top = 1.0
 offset_right = -9.0
 offset_bottom = -3.0
-texture = ExtResource("3_2mprr")
+texture = ExtResource("2_6ukkt")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -31,9 +31,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -43.5
+offset_left = -46.5
 offset_top = -35.0
-offset_right = 43.5
+offset_right = 53.5
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -45,7 +45,7 @@ layout_mode = 2
 
 [node name="start" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "start"
+text = "Retry"
 
 [node name="quit" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
