@@ -13,9 +13,9 @@ Archress: How's it going?
 => END
 
 ~ collect_key
-Archress: I have a key to the portal. You can exchange 3 money cases for the key.
+Archress: I have a key to the portal. You can exchange 8 money cases for the key.
 - Exchange money cases.
-	if global.apple_count >= 3:
+	if global.apple_count >= 8:
 		Archress: Great, here is the key!
 		set global.has_special_key = true
 		=> END

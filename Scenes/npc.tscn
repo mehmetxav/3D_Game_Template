@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://ioxvc3f54u1t"]
 
 [ext_resource type="Script" path="res://Scripts/npc.gd" id="1_cwk2h"]
-[ext_resource type="PackedScene" uid="uid://dgfhsa3506ieg" path="res://Models/characternpc1.glb" id="2_vfj4y"]
+[ext_resource type="PackedScene" uid="uid://cs40rsb3r17ls" path="res://Models/characternpc1.glb" id="2_vfj4y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_aaqqj"]
 
