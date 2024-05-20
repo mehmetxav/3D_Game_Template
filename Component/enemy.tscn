@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://epmelqjhdi3h"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_vy8ev"]
-[ext_resource type="AudioStream" uid="uid://chmqh0w1f23q1" path="res://audio/555412__tonsil5__zombie-death-1.wav" id="3_uuj37"]
-[ext_resource type="PackedScene" uid="uid://dc4ln8snlvu7a" path="res://Models/enemy.glb" id="3_xm8i3"]
+[ext_resource type="AudioStream" uid="uid://b4h4tkasnptws" path="res://audio/555412__tonsil5__zombie-death-1.wav" id="3_uuj37"]
+[ext_resource type="PackedScene" uid="uid://cf1pcr7h5w2jm" path="res://Models/enemy.glb" id="3_xm8i3"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_ucvxg"]
 
@@ -10,7 +10,7 @@
 radius = 0.515478
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7mh0a"]
-size = Vector3(6.99977, 1.6643, 5.11076)
+size = Vector3(6.99977, 1.6643, 5.98545)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oih5o"]
 size = Vector3(1, 1.7741, 1)
@@ -2137,7 +2137,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.57887)
 collision_layer = 64
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="playerdetectarea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302958, 1.10264, 1.96078)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302958, 1.10264, 1.52343)
 shape = SubResource("BoxShape3D_7mh0a")
 
 [node name="DetectSound" type="AudioStreamPlayer3D" parent="."]

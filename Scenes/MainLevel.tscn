@@ -1241,6 +1241,18 @@ transform = Transform3D(0.173648, 0, -0.984808, 0, 1, 0, 0.984808, 0, 0.173648, 
 [node name="OmniLight3D" type="OmniLight3D" parent="outdoor_wall_lamp_free4/outdoor_wall_lamp_free/outdoor_wall_lamp_free7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0937042, 0.123556, 0)
 
+[node name="OmniLight3D2" type="OmniLight3D" parent="outdoor_wall_lamp_free4/outdoor_wall_lamp_free/outdoor_wall_lamp_free7"]
+transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -0.0937061, 0.123556, 1.90735e-06)
+
+[node name="outdoor_wall_lamp_free8" parent="outdoor_wall_lamp_free4/outdoor_wall_lamp_free" instance=ExtResource("36_x7tfb")]
+transform = Transform3D(-0.180862, 0, 0.983508, 0, 1, 0, -0.983508, 0, -0.180862, -9.79548, 0, -80.1143)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="outdoor_wall_lamp_free4/outdoor_wall_lamp_free/outdoor_wall_lamp_free8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0937042, 0.123556, 0)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="outdoor_wall_lamp_free4/outdoor_wall_lamp_free/outdoor_wall_lamp_free8"]
+transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -0.0937061, 0.123556, 1.90735e-06)
+
 [node name="outdoor_wall_lamp_free6" parent="outdoor_wall_lamp_free4/outdoor_wall_lamp_free" instance=ExtResource("36_x7tfb")]
 transform = Transform3D(0.173648, 0, -0.984808, 0, 1, 0, 0.984808, 0, 0.173648, -13.7333, 0, -70.4839)
 
