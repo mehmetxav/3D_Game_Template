@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://bbbuskefw0uge"]
+[gd_scene load_steps=74 format=3 uid="uid://bbbuskefw0uge"]
 
 [ext_resource type="AudioStream" uid="uid://cq3b3ruw2n6yp" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
@@ -24,8 +24,6 @@
 [ext_resource type="Texture2D" uid="uid://2f72xtejnv5h" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
 [ext_resource type="Texture2D" uid="uid://bxxejlmfvsw3e" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
 [ext_resource type="PackedScene" uid="uid://ce7lw7eye57lh" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
-[ext_resource type="Material" uid="uid://b51temmoa30rk" path="res://Materials/BlueGrid.tres" id="12_qh6wi"]
-[ext_resource type="PackedScene" uid="uid://dpnhoyddvi6qv" path="res://Scenes/Components/box.tscn" id="12_s8u41"]
 [ext_resource type="PackedScene" uid="uid://dc2vd113yg1io" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 [ext_resource type="PackedScene" uid="uid://74xvu3f3ry78" path="res://Scenes/Components/area_portal.tscn" id="19_dm4iw"]
 [ext_resource type="PackedScene" uid="uid://u2yadxjmjjlb" path="res://Scenes/special_key.tscn" id="20_ffobn"]
@@ -212,10 +210,6 @@ data = PackedVector3Array(22.8244, 6.1314, 30.1316, 32.8244, 6.1314, 30.1316, 22
 
 [sub_resource type="BoxMesh" id="BoxMesh_idw28"]
 size = Vector3(5, 5, 5)
-
-[sub_resource type="SphereMesh" id="SphereMesh_qqm72"]
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_jcxse"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_lrcts"]
 size = Vector2(4, 16)
@@ -577,11 +571,11 @@ transform = Transform3D(-0.0300326, 0, 0.999549, 0, 1, 0, -0.999549, 0, -0.03003
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4287, 1.63408, 25.2211)
 collision_layer = 2049
 collision_mask = 4098
-speed = 7.0
+speed = 6.0
 respawn = NodePath("../Respawn")
 
 [node name="Checkpoint" parent="." node_paths=PackedStringArray("player_respawn_position") instance=ExtResource("9_pjixv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.8451, 1.16009, 0.159063)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1546, -0.948362, 0.159063)
 player_respawn_position = NodePath("../Respawn")
 
 [node name="InteriorHouse" type="StaticBody3D" parent="."]
@@ -941,38 +935,17 @@ mesh = SubResource("BoxMesh_idw28")
 [node name="Moneycase" parent="Collectibles" instance=ExtResource("7_rcf5u")]
 transform = Transform3D(-0.99997, 0, 0.00776657, 0, 1, 0, -0.00776657, 0, -0.99997, 30.6101, 1.68418, 25.6554)
 
+[node name="Moneycase4" parent="Collectibles" instance=ExtResource("7_rcf5u")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.3444, 0.935496, 44.1679)
+
 [node name="Moneycase2" parent="Collectibles" instance=ExtResource("7_rcf5u")]
 transform = Transform3D(-0.994665, 0, 0.103157, 0, 1, 0, -0.103157, 0, -0.994665, 28.333, 0.70977, 1.91202)
 
+[node name="Moneycase5" parent="Collectibles" instance=ExtResource("7_rcf5u")]
+transform = Transform3D(0.997866, 0, -0.0652985, 0, 1, 0, 0.0652985, 0, 0.997866, 17.333, 0.70977, 2.7763)
+
 [node name="Moneycase3" parent="Collectibles" instance=ExtResource("7_rcf5u")]
 transform = Transform3D(0.0241879, 0, 0.999707, 0, 1, 0, -0.999707, 0, 0.0241879, 31.7344, 0.796387, 46.5184)
-
-[node name="Rigidobjects" type="Node3D" parent="."]
-
-[node name="Box" parent="Rigidobjects" instance=ExtResource("12_s8u41")]
-transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 37.7044, 6.23699, 0)
-collision_mask = 139
-
-[node name="Box2" parent="Rigidobjects" instance=ExtResource("12_s8u41")]
-transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 37.7044, 8.23699, 0)
-collision_mask = 139
-
-[node name="Box3" parent="Rigidobjects" instance=ExtResource("12_s8u41")]
-transform = Transform3D(0.822074, 0, -0.56938, 0.321558, 0.825261, 0.464267, 0.469887, -0.564751, 0.678426, 37.7044, 10.237, 0)
-collision_mask = 139
-
-[node name="Box4" type="RigidBody3D" parent="Rigidobjects"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.3005, 11.9403, -0.140193)
-collision_layer = 8
-collision_mask = 139
-mass = 0.01
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Rigidobjects/Box4"]
-material_override = ExtResource("12_qh6wi")
-mesh = SubResource("SphereMesh_qqm72")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Rigidobjects/Box4"]
-shape = SubResource("SphereShape3D_jcxse")
 
 [node name="Lighting for all of the street lamps" type="Node3D" parent="."]
 
@@ -1309,7 +1282,9 @@ shape = SubResource("BoxShape3D_7ln4b")
 [connection signal="reached_player" from="Enemy/Enemy" to="Player" method="_on_enemy_reached_player"]
 [connection signal="reached_player" from="Enemy2/Enemy" to="Player" method="_on_enemy_reached_player"]
 [connection signal="item_collected" from="Collectibles/Moneycase" to="UI/HUD" method="_on_moneycase_item_collected"]
+[connection signal="item_collected" from="Collectibles/Moneycase4" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase2" to="UI/HUD" method="_on_moneycase_item_collected"]
+[connection signal="item_collected" from="Collectibles/Moneycase5" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="item_collected" from="Collectibles/Moneycase3" to="UI/HUD" method="_on_moneycase_item_collected"]
 [connection signal="update_console" from="AreaPortal" to="UI/HUD" method="_on_area_portal_update_console"]
 
