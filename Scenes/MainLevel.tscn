@@ -1029,7 +1029,7 @@ shape = SubResource("BoxShape3D_8ip8r")
 
 [node name="AreaPortal" parent="." instance=ExtResource("19_dm4iw")]
 transform = Transform3D(-0.0440204, 0, 0.999031, 0, 1, 0, -0.999031, 0, -0.0440204, 16.1614, 2.58654, -0.0656615)
-level_to_load = "res://Scenes/Levels/level_2.tscn"
+level_to_load = "res://UI/finishedgamescreen.tscn"
 
 [node name="Key" parent="." instance=ExtResource("20_ffobn")]
 transform = Transform3D(-0.00760959, 0, -0.999971, 0, 1, 0, 0.999971, 0, -0.00760959, 732.231, 0.778809, 3.0137)
