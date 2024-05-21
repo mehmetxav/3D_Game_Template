@@ -1,36 +1,36 @@
 [gd_scene load_steps=74 format=3 uid="uid://bbbuskefw0uge"]
 
-[ext_resource type="AudioStream" uid="uid://cq3b3ruw2n6yp" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
+[ext_resource type="AudioStream" uid="uid://dbk3xkwwpttn0" path="res://audio/404685__norwayjohn__ocean-crete-3.wav" id="1_0uy7k"]
 [ext_resource type="PackedScene" uid="uid://b4w4jjsshwydp" path="res://Scenes/hud.tscn" id="1_3mcan"]
-[ext_resource type="PackedScene" uid="uid://brke1eb6cit7g" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
+[ext_resource type="PackedScene" uid="uid://b8rxgmpa1j47i" path="res://Models/moscow_lamp_post.glb" id="1_w8yd5"]
 [ext_resource type="Script" path="res://addons/csg_mesher/src/CSGMesher.gd" id="2_eeo3n"]
 [ext_resource type="PackedScene" uid="uid://b0q0bnia378s4" path="res://Scenes/Player.tscn" id="2_senwc"]
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="2_vd5i5"]
-[ext_resource type="AudioStream" uid="uid://dso0bulxu4ih2" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
-[ext_resource type="PackedScene" uid="uid://bryigp483ovo8" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
-[ext_resource type="PackedScene" uid="uid://ifpvmskyuakw" path="res://Models/window.glb" id="5_ekamu"]
-[ext_resource type="PackedScene" uid="uid://2q7vdjwconnc" path="res://Models/centre_table.glb" id="6_c6vpx"]
-[ext_resource type="Texture2D" uid="uid://dldme7wia24lk" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="7_ogwkc"]
-[ext_resource type="Texture2D" uid="uid://c135t81ws4tky" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Color.png" id="7_ohlyt"]
+[ext_resource type="AudioStream" uid="uid://dh5lu0k0ss7fm" path="res://audio/582346__pianofarm__owls-coyote-06022020.mp3" id="4_6tdpm"]
+[ext_resource type="PackedScene" uid="uid://b5qhptwwayinr" path="res://Models/high_quality_chair.glb" id="4_76rc5"]
+[ext_resource type="PackedScene" uid="uid://cku6ptkvf7b6s" path="res://Models/window.glb" id="5_ekamu"]
+[ext_resource type="PackedScene" uid="uid://bttdsnagjgv37" path="res://Models/centre_table.glb" id="6_c6vpx"]
+[ext_resource type="Texture2D" uid="uid://dg3aeq86i3167" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Color.png" id="7_ogwkc"]
+[ext_resource type="Texture2D" uid="uid://bc4in2el3t7t0" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Color.png" id="7_ohlyt"]
 [ext_resource type="PackedScene" uid="uid://dtar81oh4msu8" path="res://Scenes/moneycase.tscn" id="7_rcf5u"]
-[ext_resource type="PackedScene" uid="uid://cwb32qkitcya5" path="res://Models/floor_carpet.glb" id="8_0hebu"]
-[ext_resource type="Texture2D" uid="uid://bikj5euxllpl4" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Displacement.png" id="8_gtbaa"]
-[ext_resource type="Texture2D" uid="uid://cgshc1w4nqgot" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Displacement.png" id="8_ic25g"]
-[ext_resource type="Texture2D" uid="uid://dg4242ualwk0x" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalDX.png" id="9_eoyug"]
+[ext_resource type="PackedScene" uid="uid://0pfwx3uf1jf1" path="res://Models/floor_carpet.glb" id="8_0hebu"]
+[ext_resource type="Texture2D" uid="uid://kcoyunledtrr" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Displacement.png" id="8_gtbaa"]
+[ext_resource type="Texture2D" uid="uid://u5w3b732roj5" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Displacement.png" id="8_ic25g"]
+[ext_resource type="Texture2D" uid="uid://jyfv2fffo7ih" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalDX.png" id="9_eoyug"]
 [ext_resource type="PackedScene" uid="uid://epmelqjhdi3h" path="res://Component/enemy.tscn" id="9_imeyv"]
 [ext_resource type="Script" path="res://Scenes/Enemyy.gd" id="9_mkh4i"]
 [ext_resource type="PackedScene" uid="uid://bfg6gdyos2hxc" path="res://Scenes/Components/checkpoint.tscn" id="9_pjixv"]
-[ext_resource type="Texture2D" uid="uid://cn1altpn5rewq" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalDX.png" id="9_u7jl1"]
-[ext_resource type="Texture2D" uid="uid://2f72xtejnv5h" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
-[ext_resource type="Texture2D" uid="uid://bxxejlmfvsw3e" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
-[ext_resource type="PackedScene" uid="uid://ce7lw7eye57lh" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
-[ext_resource type="PackedScene" uid="uid://dc2vd113yg1io" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
+[ext_resource type="Texture2D" uid="uid://c5agyo4bwamg7" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_NormalDX.png" id="9_u7jl1"]
+[ext_resource type="Texture2D" uid="uid://cfj2xkwwvn630" path="res://Textures/Bricks085_1K-PNG/Bricks085_1K-PNG_Roughness.png" id="10_ptgtg"]
+[ext_resource type="Texture2D" uid="uid://i18v4er5wgfj" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_Roughness.png" id="10_w1vmb"]
+[ext_resource type="PackedScene" uid="uid://dpmi6rawq1nfh" path="res://Models/hanging_led_lamp.glb" id="11_o81c5"]
+[ext_resource type="PackedScene" uid="uid://d3uvojie1rfov" path="res://Models/door_36_inch_15jan24.glb" id="16_14qrx"]
 [ext_resource type="PackedScene" uid="uid://74xvu3f3ry78" path="res://Scenes/Components/area_portal.tscn" id="19_dm4iw"]
 [ext_resource type="PackedScene" uid="uid://u2yadxjmjjlb" path="res://Scenes/special_key.tscn" id="20_ffobn"]
 [ext_resource type="PackedScene" uid="uid://ioxvc3f54u1t" path="res://Scenes/npc.tscn" id="21_dgjpc"]
 [ext_resource type="PackedScene" uid="uid://ddpo1x4yssh5i" path="res://Component/tree.tscn" id="22_n6m7t"]
 [ext_resource type="PackedScene" uid="uid://by4yeprkmb0a" path="res://Scenes/Components/wooden_fence.tscn" id="32_r14mf"]
-[ext_resource type="Texture2D" uid="uid://b8m7obecg22yh" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
+[ext_resource type="Texture2D" uid="uid://ckyxsa3f8be2f" path="res://Textures/Wood092_1K-PNG (1)/Wood092_1K-PNG_NormalGL.png" id="33_i7g8y"]
 [ext_resource type="PackedScene" uid="uid://ymwj4o505hn5" path="res://Scenes/Components/bed_asset.tscn" id="34_gq5vx"]
 [ext_resource type="PackedScene" uid="uid://2rcfrwibogqi" path="res://Scenes/Components/shack.tscn" id="35_apnfa"]
 [ext_resource type="PackedScene" uid="uid://b7dafb4g1c4mw" path="res://Scenes/Components/outdoor_wall_lamp_free.tscn" id="36_x7tfb"]
@@ -379,7 +379,7 @@ transform = Transform3D(1, 0, 1.02095e-08, 0, 1, 0, -1.21344e-08, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_hf2qi")
 
 [node name="Light 25" parent="streetlights" instance=ExtResource("1_w8yd5")]
-transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 19.041, 0.521137, 38.5687)
+transform = Transform3D(-0.0373588, 0, -0.999302, 0, 1, 0, 0.999302, 0, -0.0373588, 19.041, 0.521137, 42.099)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="streetlights/Light 25"]
 collision_layer = 2
@@ -984,7 +984,7 @@ light_energy = 16.0
 omni_range = 9.12502
 
 [node name="OmniLight3D27" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.088, 5.62115, 38.8162)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9122, 5.62115, 42.0034)
 light_energy = 16.0
 omni_range = 9.12502
 
