@@ -572,7 +572,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4287, 1.63408, 25.2211)
 collision_layer = 2049
 collision_mask = 4098
 speed = 6.0
-respawn = NodePath("../Respawn")
+respawn = NodePath("")
 
 [node name="Checkpoint" parent="." node_paths=PackedStringArray("player_respawn_position") instance=ExtResource("9_pjixv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1546, -0.948362, 0.159063)
@@ -670,7 +670,6 @@ speed = 5
 patrol_locations = [NodePath("../patrol 1/Marker3D"), NodePath("../patrol 1/Marker3D2"), NodePath("../patrol 1/Marker3D3")]
 
 [node name="Enemy2" type="Node3D" parent="."]
-unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -31.1935)
 script = ExtResource("9_mkh4i")
 
@@ -1004,7 +1003,7 @@ light_energy = 16.0
 omni_range = 9.12502
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="Lighting for all of the street lamps"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2946, 5.42115, -5.98869)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.325, 5.42115, -5.98869)
 light_energy = 16.0
 omni_range = 9.12502
 

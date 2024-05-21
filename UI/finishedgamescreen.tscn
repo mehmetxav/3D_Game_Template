@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dpmi2ndphpuva"]
 
 [ext_resource type="Script" path="res://Scripts/finishedgamescreen.gd" id="1_bbxnl"]
-[ext_resource type="Texture2D" uid="uid://bumo6nb8ess0m" path="res://Component/CONGRATULATIONS.jpg" id="1_wafmi"]
+[ext_resource type="Texture2D" uid="uid://1qvb75dnd4c6" path="res://Component/CONGRATULATIONS.jpg" id="1_wafmi"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -40,3 +40,6 @@ text = "Play Again"
 [node name="Button2" type="Button" parent="TextureRect/CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_PlayAgain_pressed"]
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/HBoxContainer/Button2" to="." method="_on_quit_pressed"]

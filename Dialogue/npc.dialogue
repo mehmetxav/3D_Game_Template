@@ -18,6 +18,7 @@ Archress: I have a key to the portal. You can exchange 8 money cases for the key
 	if global.apple_count >= 8:
 		Archress: Great, here is the key!
 		set global.has_special_key = true
+		set global.apple_count = 0
 		=> END
 	else:
 		Jerry: You don't have enough money cases for the key!
